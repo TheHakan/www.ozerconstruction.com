@@ -5,4 +5,4 @@ Disallow: /Controls/
 Disallow: /Web.config
 Disallow: /Global.asax
 
-Sitemap: http://solmazaluminyum.com/sitemap.xml
+Sitemap: http://scz.az/sitemap.xml
