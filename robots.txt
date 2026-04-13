@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /bin/
+Disallow: /Controls/
+Disallow: /Web.config
+Disallow: /Global.asax
+
+Sitemap: http://solmazaluminyum.com/sitemap.xml
