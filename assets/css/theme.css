@@ -5362,6 +5362,7 @@ parallax-block
 .parallax-block__title {
   font-family: 'Alumni Sans', Helvetica, sans-serif;
   font-size: 160px;
+  font-weight: 600;
   line-height: 0.84375;
   -ms-flex-positive: 1;
   flex-grow: 1;
