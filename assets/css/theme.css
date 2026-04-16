@@ -1368,6 +1368,7 @@ counter-block
   font-family: 'Alumni Sans', Helvetica, sans-serif;
   margin-left: -7px;
   margin-bottom: -25px;
+  font-weight: 600;
 }
 
 .counter-block__card-description {
@@ -4219,6 +4220,7 @@ main-slide
 .main-slide__title {
   font-family: 'Alumni Sans', Helvetica, sans-serif;
   font-size: 180px;
+  font-weight: 600;
   line-height: 0.75;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -7966,6 +7968,7 @@ zoom-counter
   line-height: 0.861111111111111;
   font-family: 'Alumni Sans', Helvetica, sans-serif;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 
 .zoom-counter__text {
