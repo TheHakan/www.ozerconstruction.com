@@ -5,24 +5,30 @@ node_modules/
 assets/js/
 assets/css/
 
+*.md
+
 # Auto-generated detail pages
-AZ/numune-mehsullar/
-AZ/layiheler/
-AZ/bloglar/
-EN/sample-products/
-EN/projects/
-EN/blogs/
-TR/ornek-urunler/
-TR/projeler/
-TR/bloglar/
-RU/obrazcy-produkcii/
-RU/proekty/
-RU/blog/
-en/
-tr/
-En/
+# AZ/numune-mehsullar/
+# AZ/layiheler/
+# AZ/bloglar/
+# EN/sample-products/
+# EN/projects/
+# EN/blogs/
+# TR/ornek-urunler/
+# TR/projeler/
+# TR/bloglar/
+# RU/obrazcy-produkcii/
+# RU/proekty/
+# RU/blog/
+# en/
+# tr/
+# En/
 
 # Static media / upload folders
 Contents/
 image/
 img/
+
+vercel.json
+
+*.yaml
