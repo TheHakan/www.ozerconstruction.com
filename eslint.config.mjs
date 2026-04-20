@@ -18,9 +18,9 @@ export default [
       "assets/css/revolution/**",
 
       // Auto-generated detail pages (lowercase lang dirs = all detail pages)
-      "en/**",
-      "tr/**",
-      "En/**",
+      // "en/**",
+      // "tr/**",
+      // "En/**",
 
       // Auto-generated pages in uppercase lang dirs
       "AZ/numune-mehsullar/**",
