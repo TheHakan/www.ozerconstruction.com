@@ -8,5 +8,8 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/api/contact/", "destination": "/api/contact" }
   ]
 }
