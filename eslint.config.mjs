@@ -1,4 +1,3 @@
-import html from "@html-eslint/eslint-plugin";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
 
@@ -35,6 +34,10 @@ export default [
       "RU/proekty/**",
       "RU/blog/**",
 
+      // Accidental nested dirs created by scripts run from wrong cwd
+      "EN/expertice/bending/EN/**",
+      "EN/expertice/bending/expertice/**",
+
       // Static media / upload folders
       "Contents/**",
       "image/**",
@@ -42,20 +45,7 @@ export default [
     ],
   },
   {
-    // HTML files — only Prettier formatting issues
-    files: ["**/*.html"],
-    plugins: {
-      "@html-eslint": html,
-      prettier: prettierPlugin,
-    },
-    language: "@html-eslint/html",
-    rules: {
-      ...prettierConfig.rules,
-      "prettier/prettier": "warn",
-    },
-  },
-  {
-    // JS files
+    // JS files only — HTML linting handled by prettier --check task (faster)
     files: ["**/*.js", "**/*.mjs"],
     plugins: {
       prettier: prettierPlugin,
