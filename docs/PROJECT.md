@@ -398,7 +398,7 @@ scz.az/ (public_html)
 ## 9. SEO Specification
 
 | Element | Status | Notes |
-|---|---|---|
+| --- | --- | --- |
 | `<title>` tags | ✅ Updated | All pages updated for SCZ Metal |
 | `<meta name="description">` | ✅ Updated | Rewritten for SCZ Metal services |
 | `<meta name="keywords">` | ✅ Updated | CNC, metal, welding, cutting keywords |
@@ -414,7 +414,7 @@ scz.az/ (public_html)
 ## 10. Known Issues & Technical Notes
 
 | # | Issue | Severity | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | **EN folder case variants** (`/EN/`, `/en/`, `/En/`) | 🔴 High | Three case variants of the English folder exist. On Linux servers (Hostinger) paths are case-sensitive — this will cause 404 errors. Consolidate to one canonical folder (recommend `/en/`) and redirect others. |
 | 2 | **TR folder case variants** (`/TR/`, `/tr/`) | 🔴 High | Same issue as above. Consolidate to `/tr/`. |
 | 3 | **`expertice` folder typo** (EN) | 🟡 Medium | Should be `expertise`. Fix slug and update all internal links. |
@@ -430,7 +430,7 @@ scz.az/ (public_html)
 All changes applied by Hakan across all language versions unless stated otherwise.
 
 | # | Category | Change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Branding | Logo replaced — Solmaz Aluminyum → SCZ Metal MMC | ✅ Done |
 | 2 | Branding | All brand name text replaced site-wide | ✅ Done |
 | 3 | Branding | Brand images and banners replaced | ✅ Done |
@@ -453,7 +453,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 ## 12. Pending Tasks
 
 | # | Task | Priority | Due |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Resolve EN/en/En folder case conflict | 🔴 Critical | Before deploy |
 | 2 | Resolve TR/tr folder case conflict | 🔴 Critical | Before deploy |
 | 3 | Replace all images with HD versions | 🔴 High | Apr 23 |
@@ -475,7 +475,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 ## 13. Delivery & Sign-Off
 
 | Field | Details |
-|---|---|
+| --- | --- |
 | **Prepared by** | Hakan |
 | **Client** | SCZ Metal MMC |
 | **Website** | scz.az |
@@ -486,7 +486,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 ---
 
 | | Signature | Date |
-|---|---|---|
+| --- | --- | --- |
 | **Developer (Hakan)** | ___________________________ | ___________ |
 | **Client (SCZ Metal MMC)** | ___________________________ | ___________ |
 
