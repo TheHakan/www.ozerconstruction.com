@@ -1,14 +1,28 @@
 # Dependencies
 node_modules/
 
-# Build outputs & minified assets
-assets/js/*.min.js
-assets/css/*.min.css
-assets/js/revolution/
-assets/js/revolution-addons/
-assets/css/revolution/
+# Minified / vendor assets
+assets/js/
+assets/css/
 
-# Large auto-generated content directories
+# Auto-generated detail pages
+AZ/numune-mehsullar/
+AZ/layiheler/
+AZ/bloglar/
+EN/sample-products/
+EN/projects/
+EN/blogs/
+TR/ornek-urunler/
+TR/projeler/
+TR/bloglar/
+RU/obrazcy-produkcii/
+RU/proekty/
+RU/blog/
+en/
+tr/
+En/
+
+# Static media / upload folders
 Contents/
 image/
 img/
