@@ -26,11 +26,24 @@
         "close": false,
         "revealProblems": "onProblem"
       },
-      "problemMatcher": {
-        "owner": "prettier",
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": { "regexp": "^\\[warn\\] (\\S+)$", "file": 1 }
-      },
+      "problemMatcher": [
+        {
+          "owner": "prettier",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "severity": "warning",
+          "pattern": { "regexp": "^\\[warn\\] (\\S+)$", "file": 1 }
+        },
+        {
+          "owner": "prettier",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "severity": "error",
+          "pattern": {
+            "regexp": "^\\[error\\] (\\S+): (.+)$",
+            "file": 1,
+            "message": 2
+          }
+        }
+      ],
       "group": "build"
     },
     {
