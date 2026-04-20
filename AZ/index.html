@@ -469,8 +469,7 @@
                                 style="background-image: url(../assets/img/bg/Hemen-Ulas-Contact-Now.jpg)"></div>
                             <div class="col-md-8 col-xl-5 mx-auto">
                                 <div class="py-7">
-                                    <form method="post"
-                                        action="https://www.solmazaluminyum.com/TR/iletisim/contact.aspx">
+                                    <form id="az-contact-form" method="post" action="/api/contact">
                                         <h3><strong>Dərhal əlaqə saxlayaq.</strong></h3>
                                         <p>Layihələrinizə, memarlıq çertyojlarınıza dəstək olacaq təcrübəli
                                             məsləhətçilərimizə hər zaman müraciət edə bilərsiniz.</p>
@@ -561,6 +560,41 @@
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyCwVuYiM-83l2IdjpT9uC0lg4jBm8-w4j8&amp;ver=1"></script>
     <script src="../assets/js/gmap.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script>
+        (function () {
+            var form = document.getElementById('az-contact-form');
+            if (!form) return;
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var btn = form.querySelector('input[type="submit"]');
+                if (btn) btn.disabled = true;
+                var data = {
+                    txtFullName:    (form.querySelector('[name="txtFullName"]')    || {}).value || '',
+                    txtWorkMail:    (form.querySelector('[name="txtWorkMail"]')    || {}).value || '',
+                    txtPhone:       (form.querySelector('[name="txtPhone"]')       || {}).value || '',
+                    txtCompanyName: (form.querySelector('[name="txtCompanyName"]') || {}).value || ''
+                };
+                fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                })
+                .then(function (r) { return r.json(); })
+                .then(function (result) {
+                    if (result.success) {
+                        form.innerHTML = '<div style="text-align:center;padding:40px 0;"><h4>Mesajınız göndərildi!</h4><p>Ən qısa müddətdə sizinlə əlaqə saxlayacağıq.</p></div>';
+                    } else {
+                        alert(result.error || 'Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
+                        if (btn) btn.disabled = false;
+                    }
+                })
+                .catch(function () {
+                    alert('Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
+                    if (btn) btn.disabled = false;
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
