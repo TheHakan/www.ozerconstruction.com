@@ -277,7 +277,7 @@
                         <div class="row">
                             <div class="cards__item col-12 col-md-6 col-xl-3">
                                 <a class="cards__item-inner" href="ixtisaslarimiz/kesim/index.html"
-                                    style="background-image: url('../image/Uzmanlik-Kesim-Fotograf-D.jpg')">
+                                    style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../image/CNC-Lazer-Kesim-Fotograf.jpg')">
                                     <span class="cards__item-content"><span class="cards__item-index">01</span><span
                                             class="cards__item-title">Kəsim</span><span class="cards__item-text">
                                             CNC Lazer Kəsim.<br />
@@ -289,7 +289,7 @@
                             </div>
                             <div class="cards__item col-12 col-md-6 col-xl-3">
                                 <a class="cards__item-inner" href="ixtisaslarimiz/bukum/index.html"
-                                    style="background-image: url('../image/Uzmanlik-Bukum-Fotograf-D.jpg')">
+                                    style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../image/CNC-Abkant-Bukum-Fotograf.jpg')">
                                     <span class="cards__item-content"><span class="cards__item-index">02</span><span
                                             class="cards__item-title">Əyim</span><span class="cards__item-text">
                                             CNC Abkant Əyim.<br />
@@ -301,7 +301,7 @@
                             </div>
                             <div class="cards__item col-12 col-md-6 col-xl-3">
                                 <a class="cards__item-inner" href="ixtisaslarimiz/qaynaq/index.html"
-                                    style="background-image: url('../image/Uzmanlik-Kaynak-Fotograf-D.jpg')">
+                                    style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../image/Uzmanlik-Kaynak-Fotograf1.jpg')">
                                     <span class="cards__item-content"><span class="cards__item-index">03</span><span
                                             class="cards__item-title">Qaynaq</span><span
                                             class="cards__item-text">Paslanmaz alüminium, dəmir, mis, latun
@@ -311,7 +311,7 @@
                             </div>
                             <div class="cards__item col-12 col-md-6 col-xl-3">
                                 <a class="cards__item-inner" href="ixtisaslarimiz/boya/index.html"
-                                    style="background-image: url('../image/Uzmanlik-Boya-Fotograf-D.jpg')">
+                                    style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../image/Uzmanlik-Boya-Fotograf-D.webp')">
                                     <span class="cards__item-content"><span class="cards__item-index">04</span><span
                                             class="cards__item-title">Boya</span><span
                                             class="cards__item-text">Məhsulların səthinə boyama, anodlaşdırma,
@@ -483,7 +483,8 @@
                                         <div class="form-group"><input name="txtCompanyName" type="text"
                                                 class="form-control" placeholder="Şirkətinizin Adı*" /></div>
                                         <div class="form-group">
-                                            <input type="submit" value="Göndər" class="btn btn-lg btn-block btn-primary" />
+                                            <input type="submit" value="Göndər"
+                                                class="btn btn-lg btn-block btn-primary" />
                                         </div>
                                     </form>
                                 </div>
@@ -569,9 +570,9 @@
                 var btn = form.querySelector('input[type="submit"]');
                 if (btn) btn.disabled = true;
                 var data = {
-                    txtFullName:    (form.querySelector('[name="txtFullName"]')    || {}).value || '',
-                    txtWorkMail:    (form.querySelector('[name="txtWorkMail"]')    || {}).value || '',
-                    txtPhone:       (form.querySelector('[name="txtPhone"]')       || {}).value || '',
+                    txtFullName: (form.querySelector('[name="txtFullName"]') || {}).value || '',
+                    txtWorkMail: (form.querySelector('[name="txtWorkMail"]') || {}).value || '',
+                    txtPhone: (form.querySelector('[name="txtPhone"]') || {}).value || '',
                     txtCompanyName: (form.querySelector('[name="txtCompanyName"]') || {}).value || ''
                 };
                 fetch('/api/contact', {
@@ -579,19 +580,19 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
                 })
-                .then(function (r) { return r.json(); })
-                .then(function (result) {
-                    if (result.success) {
-                        form.innerHTML = '<div style="text-align:center;padding:40px 0;"><h4>Mesajınız göndərildi!</h4><p>Ən qısa müddətdə sizinlə əlaqə saxlayacağıq.</p></div>';
-                    } else {
-                        alert(result.error || 'Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
+                    .then(function (r) { return r.json(); })
+                    .then(function (result) {
+                        if (result.success) {
+                            form.innerHTML = '<div style="text-align:center;padding:40px 0;"><h4>Mesajınız göndərildi!</h4><p>Ən qısa müddətdə sizinlə əlaqə saxlayacağıq.</p></div>';
+                        } else {
+                            alert(result.error || 'Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
+                            if (btn) btn.disabled = false;
+                        }
+                    })
+                    .catch(function () {
+                        alert('Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
                         if (btn) btn.disabled = false;
-                    }
-                })
-                .catch(function () {
-                    alert('Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
-                    if (btn) btn.disabled = false;
-                });
+                    });
             });
         })();
     </script>
