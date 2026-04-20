@@ -7,8 +7,12 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint . --cache",
-    "lint:fix": "eslint . --fix --cache"
+    "lint": "eslint . --cache --format stylish",
+    "lint:fix": "eslint . --fix --cache --format stylish",
+    "lint:full": "eslint . --cache --format compact --max-warnings=9999",
+    "lint:file": "eslint --cache --format compact --max-warnings=9999",
+    "prettier:check": "prettier --check \"AZ/**/*.html\" \"EN/**/*.html\" \"TR/**/*.html\" \"RU/**/*.html\" index.html",
+    "prettier:fix": "prettier --write \"AZ/**/*.html\" \"EN/**/*.html\" \"TR/**/*.html\" \"RU/**/*.html\" index.html"
   },
   "dependencies": {
     "nodemailer": "^6.9.0"
@@ -18,6 +22,7 @@
     "@html-eslint/parser": "^0.59.0",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-formatter-compact": "^9.0.1",
     "eslint-plugin-prettier": "^5.5.5",
     "prettier": "^3.8.3"
   }
