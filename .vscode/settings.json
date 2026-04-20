@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.enable": true,
+  "eslint.enable": true,
+  "eslint.validate": ["javascript", "html"],
+  "eslint.useFlatConfig": true,
+  "eslint.run": "onType",
+  "eslint.problems.maxDocumentProblems": 1000,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
