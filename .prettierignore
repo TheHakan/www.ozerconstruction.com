@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build outputs & minified assets
+assets/js/*.min.js
+assets/css/*.min.css
+assets/js/revolution/
+assets/js/revolution-addons/
+assets/css/revolution/
+
+# Large auto-generated content directories
+Contents/
+image/
+img/
