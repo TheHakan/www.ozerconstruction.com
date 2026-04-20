@@ -4,41 +4,24 @@
     {
       "label": "ESLint",
       "type": "shell",
-      "command": "while true; do echo '__eslint_start__'; pnpm exec eslint . --cache --format compact 2>/dev/null | head -n 10000; echo '__eslint_done__'; sleep 60; done",
-      "isBackground": true,
+      "command": "pnpm exec eslint \"**/*.js\" \"**/*.mjs\" --cache --format compact",
+      "isBackground": false,
       "presentation": {
-        "reveal": "silent",
+        "reveal": "always",
         "panel": "dedicated",
         "close": false,
         "revealProblems": "onProblem"
       },
-      "problemMatcher": {
-        "owner": "eslint",
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^(.+): line (\\d+), col (\\d+), (Warning|Error) - (.+) \\((.+)\\)$",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "message": 5,
-          "code": 6
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^__eslint_start__$",
-          "endsPattern": "^__eslint_done__$"
-        }
-      },
+      "problemMatcher": ["$eslint-compact"],
       "group": "build"
     },
     {
       "label": "Prettier",
       "type": "shell",
-      "command": "while true; do echo '__prettier_start__'; pnpm exec prettier --check . 2>/dev/null | head -n 10000; echo '__prettier_done__'; sleep 60; done",
-      "isBackground": true,
+      "command": "pnpm exec prettier --check .",
+      "isBackground": false,
       "presentation": {
-        "reveal": "silent",
+        "reveal": "always",
         "panel": "dedicated",
         "close": false,
         "revealProblems": "onProblem"
@@ -46,15 +29,7 @@
       "problemMatcher": {
         "owner": "prettier",
         "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^\\[warn\\] (.+)$",
-          "file": 1
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^__prettier_start__$",
-          "endsPattern": "^__prettier_done__$"
-        }
+        "pattern": { "regexp": "^\\[warn\\] (\\S+)$", "file": 1 }
       },
       "group": "build"
     },
