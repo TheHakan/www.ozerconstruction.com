@@ -23,22 +23,22 @@ export default [
       // "En/**",
 
       // Auto-generated pages in uppercase lang dirs
-      "AZ/numune-mehsullar/**",
-      "AZ/layiheler/**",
-      "AZ/bloglar/**",
-      "EN/sample-products/**",
-      "EN/projects/**",
-      "EN/blogs/**",
-      "TR/ornek-urunler/**",
-      "TR/projeler/**",
-      "TR/bloglar/**",
-      "RU/obrazcy-produkcii/**",
-      "RU/proekty/**",
-      "RU/blog/**",
+      // "AZ/numune-mehsullar/**",
+      // "AZ/layiheler/**",
+      // "AZ/bloglar/**",
+      // "EN/sample-products/**",
+      // "EN/projects/**",
+      // "EN/blogs/**",
+      // "TR/ornek-urunler/**",
+      // "TR/projeler/**",
+      // "TR/bloglar/**",
+      // "RU/obrazcy-produkcii/**",
+      // "RU/proekty/**",
+      // "RU/blog/**",
 
       // Accidental nested dirs created by scripts run from wrong cwd
-      "EN/expertice/bending/EN/**",
-      "EN/expertice/bending/expertice/**",
+      // "EN/expertice/bending/EN/**",
+      // "EN/expertice/bending/expertice/**",
 
       // Static media / upload folders
       "Contents/**",
