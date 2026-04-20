@@ -1,3 +1,4 @@
+import html from "@html-eslint/eslint-plugin";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
 
@@ -10,6 +11,7 @@ export default [
 
       // Minified / vendor assets
       "assets/js/*.min.js",
+      "assets/js/*.js",
       "assets/css/*.min.css",
       "assets/js/revolution/**",
       "assets/js/revolution-addons/**",
@@ -45,7 +47,20 @@ export default [
     ],
   },
   {
-    // JS files only — HTML linting handled by prettier --check task (faster)
+    // HTML files — linted per-file by the ESLint extension when a file is opened/saved
+    files: ["**/*.html"],
+    plugins: {
+      "@html-eslint": html,
+      prettier: prettierPlugin,
+    },
+    language: "@html-eslint/html",
+    rules: {
+      ...prettierConfig.rules,
+      "prettier/prettier": "warn",
+    },
+  },
+  {
+    // JS files
     files: ["**/*.js", "**/*.mjs"],
     plugins: {
       prettier: prettierPlugin,
