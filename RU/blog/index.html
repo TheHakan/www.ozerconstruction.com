@@ -60,7 +60,7 @@
         margin-top: -30px;
       }
       .logocuk {
-        background-image: url(../../img/scz-20-years-white-logo-removebg.png);
+        background-image: url(../../img/scz-20-years-blue-logo-removebg.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 100px;
@@ -95,7 +95,7 @@
       </svg>
     </div>
     <div class="page__inner animsition">
-      <header class="header header_white header_fixed header_offset">
+      <header class="header header_fixed header_offset">
         <div class="header__container">
           <div class="header__wrapper container-fluid">
             <div class="header__inner" style="height: 20px">
@@ -378,105 +378,107 @@
         </div>
       </header>
       <main>
-        <div class="zoom-image-head">
-          <div class="parallax-image zoom-image-head__image">
-            <div
-              class="parallax-image__image"
-              data-rellax-percentage="0.5"
-              data-rellax-speed="-3"
-              style="
-                background-image:
-                  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                  url(&quot;../../image/Blog-Fotograf.jpg&quot;);
-              "
-            ></div>
-          </div>
-          <div class="faded-block zoom-image-head__container container">
-            <div class="zoom-image-head__subtitle">SCZ METAL</div>
-            <div class="zoom-image-head__title">Блог</div>
+        <div class="heading-default heading-default_context_default">
+          <div class="container">
+            <div class="heading-default__title">Блог</div>
           </div>
         </div>
-        <div class="blog-posts">
+        <div class="masonry articles-list-wrapper">
           <div class="container">
-            <div class="blog-posts__header">
-              <a
-                class="blog-posts__filter-link link link_active"
-                data-filter="*"
-                href="index.html"
-                >Все</a
-              >
-              <a
-                class="blog-posts__filter-link link"
-                data-filter=".uğur-hekayəsi"
-                href="index.html#"
-                >Истории успеха</a
-              >
-              <a
-                class="blog-posts__filter-link link"
-                data-filter=".e-bulten"
-                href="index.html#"
-                >E-Бюллетень</a
-              >
-              <a
-                class="blog-posts__filter-link link"
-                data-filter=".bizdən-xəbərlər"
-                href="index.html#"
-                >Новости от нас</a
-              >
-              <a
-                class="blog-posts__filter-link link"
-                data-filter=".xəbər-əksi"
-                href="index.html#"
-                >Отражение новостей</a
-              >
-            </div>
-            <div class="blog-posts__body row">
-              <div class="blog-posts__item e-bulten col-12 col-md-6 col-xl-4">
-                <a
-                  class="blog-posts__item-inner"
-                  href="blog/18/cnc-fiber-lazer-kesim/index.html"
+            <div class="articles-list-wrapper__head">
+              <div class="articles-list-wrapper__filter">
+                <button
+                  class="masonry__secondary-filter-button masonry__secondary-filter-button_active"
+                  data-filter="*"
+                  type="button"
                 >
-                  <img
-                    alt="CNC Fiber Лазерная резка"
-                    class="blog-posts__image"
-                    src="/Contents/Files/BlogResim/1721_cnc_fiber_lazer_kesim.webp"
-                  />
-                  <div class="blog-posts__item-content">
-                    <div class="blog-posts__item-footer">
-                      <span class="blog-posts__category">E-Бюллетень</span>
-                      <span class="blog-posts__date">09.07.2025 12:30:39</span>
-                    </div>
-                    <div class="blog-posts__item-title">
-                      CNC Fiber Лазерная резка
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="blog-posts__item bizdən-xəbərlər col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="blog-posts__item-inner"
-                  href="blog/16/2019-yapi-fuari-istanbul/index.html"
+                  Все
+                </button>
+                <button
+                  class="masonry__secondary-filter-button"
+                  data-filter="1"
+                  type="button"
                 >
-                  <img
-                    alt="Выставка 2019 Yapı Fuarı İstanbul"
-                    class="blog-posts__image"
-                    src="/Contents/Files/BlogResim/6894_2019_yapi_fuari_istanbul.jpg"
-                  />
-                  <div class="blog-posts__item-content">
-                    <div class="blog-posts__item-footer">
-                      <span class="blog-posts__category">Новости от нас</span>
-                      <span class="blog-posts__date">24.01.2020 15:59:53</span>
-                    </div>
-                    <div class="blog-posts__item-title">
-                      Выставка Yapı 2019 Стамбул
-                    </div>
-                  </div>
-                </a>
+                  Истории успеха
+                </button>
+                <button
+                  class="masonry__secondary-filter-button"
+                  data-filter="2"
+                  type="button"
+                >
+                  E-Бюллетень
+                </button>
+                <button
+                  class="masonry__secondary-filter-button"
+                  data-filter="3"
+                  type="button"
+                >
+                  Наши новости
+                </button>
+                <button
+                  class="masonry__secondary-filter-button"
+                  data-filter="4"
+                  type="button"
+                >
+                  Обзор новостей
+                </button>
               </div>
             </div>
-            <div id="blogLoader" style="text-align: center">...загрузка...</div>
+            <div class="articles-grid masonry__grid">
+              <div class="articles-grid__item masonry__item">
+                <div class="article-item" data-filters="2">
+                  <a
+                    class="articles-grid__item-image-wrapper"
+                    href="blog/18/cnc-fiber-lazer-kesim/index.html"
+                  >
+                    <img
+                      alt="CNC Fiber Лазерная резка"
+                      class="articles-grid__item-image"
+                      src="/Contents/Files/BlogResim/1721_cnc_fiber_lazer_kesim.webp"
+                    />
+                  </a>
+                  <a
+                    class="article-item__item-title"
+                    href="blog/18/cnc-fiber-lazer-kesim/index.html"
+                    >CNC Fiber Лазерная резка</a
+                  >
+                  <div class="article-item__item-footer">
+                    <span class="article-item__item-category">E-Бюллетень</span>
+                    <span class="article-item__item-date"
+                      >09.07.2025 12:30:39</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="articles-grid__item masonry__item">
+                <div class="article-item" data-filters="3">
+                  <a
+                    class="articles-grid__item-image-wrapper"
+                    href="blog/16/2019-yapi-fuari-istanbul/index.html"
+                  >
+                    <img
+                      alt="Выставка 2019 Yapı Fuarı İstanbul"
+                      class="articles-grid__item-image"
+                      src="/Contents/Files/BlogResim/6894_2019_yapi_fuari_istanbul.jpg"
+                    />
+                  </a>
+                  <a
+                    class="article-item__item-title"
+                    href="blog/16/2019-yapi-fuari-istanbul/index.html"
+                    >Выставка Yapı 2019 Стамбул</a
+                  >
+                  <div class="article-item__item-footer">
+                    <span class="article-item__item-category"
+                      >Наши новости</span
+                    >
+                    <span class="article-item__item-date"
+                      >24.01.2020 15:59:53</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="articles-list-wrapper__loader">...загрузка...</div>
           </div>
         </div>
       </main>
