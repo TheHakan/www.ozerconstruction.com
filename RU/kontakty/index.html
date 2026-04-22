@@ -60,7 +60,7 @@
         margin-top: -30px;
       }
       .logocuk {
-        background-image: url(../../img/scz-20-years-white-logo-removebg.png);
+        background-image: url(../../img/scz-20-years-blue-logo-removebg.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 100px;
@@ -95,7 +95,7 @@
       </svg>
     </div>
     <div class="page__inner animsition">
-      <header class="header header_white header_fixed header_offset">
+      <header class="header header_fixed header_offset">
         <div class="header__container">
           <div class="header__wrapper container-fluid">
             <div class="header__inner" style="height: 20px">
@@ -378,104 +378,115 @@
         </div>
       </header>
       <main>
-        <div class="zoom-image-head">
-          <div class="parallax-image zoom-image-head__image">
-            <div
-              class="parallax-image__image"
-              data-rellax-percentage="0.5"
-              data-rellax-speed="-3"
-              style="
-                background-image:
-                  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                  url(&quot;../../image/Basvuru-Fotograf.jpg&quot;);
-              "
-            ></div>
-          </div>
-          <div class="faded-block zoom-image-head__container container">
-            <div class="zoom-image-head__subtitle">SCZ METAL</div>
-            <div class="zoom-image-head__title">Контакты</div>
-          </div>
-        </div>
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-12 col-md-5">
-              <h3>НАШИ КОНТАКТНЫЕ ДАННЫЕ</h3>
-              <p>
-                <b>SCZ METAL MMC</b><br />Шоссе Дэрнэгюль 52, Бинагадинский
-                район,<br />г. Баку, Азербайджан.
-              </p>
-              <p>T +994 51 240 45 64</p>
-              <p><a href="mailto:info@scz.az">info@scz.az</a></p>
-              <div
-                class="gmap-wrapper"
-                style="height: 300px; margin-bottom: 20px"
-              >
+        <div class="contact-block">
+          <iframe
+            class="contact-block__map"
+            src="https://www.google.com/maps?q=40.4298331416826,49.87887022281519&z=15&output=embed"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-5">
                 <div
-                  class="gmap"
-                  style="height: 100%"
-                  data-lat="40.4253"
-                  data-lng="49.8481"
-                  data-zoom="15"
-                  data-marker="../../image/map-marker.png"
-                ></div>
+                  class="heading-smallest heading-smallest_has-offset heading-smallest_size_small"
+                >
+                  НАШИ КОНТАКТНЫЕ ДАННЫЕ
+                </div>
+                <div class="contact-block__place">
+                  Баку,
+                  <span class="contact-block__place-marker">Азербайджан</span>
+                </div>
+                <div class="contact-block__text">
+                  <p>
+                    <b>SCZ Metal MMC</b><br />Шоссе Дэрнэгюль 52, Бинагадинский
+                    район,<br />г. Баку, Азербайджан.
+                  </p>
+                  <p>Тел: +994 51 240 45 64<br />E-mail: <b>info@scz.az</b></p>
+                </div>
+                <a
+                  class="contact-block__link"
+                  href="https://maps.app.goo.gl/Thda5fVQn6BRNkGv6"
+                  target="_blank"
+                  >Показать на Google Картах
+                  <span
+                    class="contact-block__link-icon icon-chevron-right"
+                  ></span
+                ></a>
               </div>
-              <a
-                href="https://maps.google.com/?q=SCZ+Metal+Derneğül+şossesi+52+Bakı"
-                target="_blank"
-                >Показать на Google Картах</a
-              >
-            </div>
-            <div class="col-12 col-md-7">
-              <h3>СВЯЖИТЕСЬ С НАМИ</h3>
-              <form method="post" action="/api/contact">
-                <div class="form-group">
-                  <input
-                    name="txtFullName"
-                    type="text"
-                    class="form-control form-control-lg"
-                    placeholder="ИМЯ ФАМИЛИЯ*"
-                  />
+              <div class="col-12 col-lg-7">
+                <div
+                  class="heading-smallest heading-smallest_has-offset heading-smallest_size_small"
+                >
+                  СВЯЖИТЕСЬ С НАМИ
                 </div>
-                <div class="form-group">
-                  <input
-                    name="txtWorkMail"
-                    type="text"
-                    class="form-control form-control-lg"
-                    placeholder="ВАШ EMAIL*"
-                  />
+                <div class="contact-block__form">
+                  <form method="post" action="/api/contact">
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <input
+                          name="txtFullName"
+                          type="text"
+                          class="contact-block__input-text"
+                          placeholder="ИМЯ ФАМИЛИЯ*"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          name="txtWorkMail"
+                          type="text"
+                          class="contact-block__input-text"
+                          placeholder="ВАШ EMAIL*"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          name="txtPhone"
+                          type="text"
+                          maxlength="12"
+                          class="contact-block__input-text"
+                          placeholder="ВАШ НОМЕР ТЕЛЕФОНА*"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          name="txtCompanyName"
+                          type="text"
+                          class="contact-block__input-text"
+                          placeholder="НАЗВАНИЕ КОМПАНИИ*"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <textarea
+                          name="txtMessage"
+                          rows="2"
+                          cols="20"
+                          class="contact-block__input-textarea"
+                          placeholder="ВАШЕ СООБЩЕНИЕ*"
+                        ></textarea>
+                        <br />
+                        <div>
+                          <input
+                            type="submit"
+                            value="ОТПРАВИТЬ"
+                            id="ru_btnContactSend"
+                            class="contact-block__submit"
+                            style="margin-top: 0px"
+                          />
+                          <span
+                            class="contact-block__submit-icon icofont-caret-right"
+                            style="margin-top: 2px"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <input
-                    name="txtPhone"
-                    type="text"
-                    maxlength="12"
-                    class="form-control form-control-lg"
-                    placeholder="ВАШ НОМЕР ТЕЛЕФОНА*"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    name="txtCompanyName"
-                    type="text"
-                    class="form-control form-control-lg"
-                    placeholder="НАЗВАНИЕ КОМПАНИИ*"
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    name="txtMessage"
-                    class="form-control form-control-lg"
-                    rows="4"
-                    placeholder="ВАШЕ СООБЩЕНИЕ*"
-                  ></textarea>
-                </div>
-                <input
-                  type="submit"
-                  value="ОТПРАВИТЬ"
-                  class="btn btn-lg btn-block btn-primary"
-                  id="ru_btnContactSend"
-                />
-              </form>
+              </div>
             </div>
           </div>
         </div>
