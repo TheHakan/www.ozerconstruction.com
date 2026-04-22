@@ -60,7 +60,7 @@
         margin-top: -30px;
       }
       .logocuk {
-        background-image: url(../../img/scz-20-years-white-logo-removebg.png);
+        background-image: url(../../img/scz-20-years-blue-logo-removebg.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 100px;
@@ -95,7 +95,7 @@
       </svg>
     </div>
     <div class="page__inner animsition">
-      <header class="header header_white header_fixed header_offset">
+      <header class="header header_fixed header_offset">
         <div class="header__container">
           <div class="header__wrapper container-fluid">
             <div class="header__inner" style="height: 20px">
@@ -378,316 +378,411 @@
         </div>
       </header>
       <main>
-        <div class="zoom-image-head">
-          <div class="parallax-image zoom-image-head__image">
-            <div
-              class="parallax-image__image"
-              data-rellax-percentage="0.5"
-              data-rellax-speed="-3"
-              style="
-                background-image:
-                  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                  url(&quot;../../image/Projeler-Fotograf.jpg&quot;);
-              "
-            ></div>
-          </div>
-          <div class="faded-block zoom-image-head__container container">
-            <div class="zoom-image-head__subtitle">SCZ METAL</div>
-            <div class="zoom-image-head__title">
-              ПРОЕКТЫ, В КОТОРЫЕ МЫ ВНОСИМ ЦЕННОСТЬ
+        <div class="heading-default heading-default_context_default">
+          <div class="container">
+            <div class="heading-default__title">
+              Проекты, в которые мы вносим ценность
             </div>
           </div>
         </div>
-        <section class="zoom-grid">
-          <div class="container">
-            <div class="zoom-grid__filter-wrapper">
-              <div class="zoom-grid__filter-label">Категории</div>
-              <div class="zoom-grid__filter-buttons">
-                <button
-                  class="zoom-grid__filter-button zoom-grid__filter-button_active"
-                  data-filter="*"
-                  type="button"
-                >
-                  ВСЕ
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".cat-2"
-                  type="button"
-                >
-                  Искусство
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".cat-1"
-                  type="button"
-                >
-                  Архитектура
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".cat-4"
-                  type="button"
-                >
-                  Освещение
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".cat-3"
-                  type="button"
-                >
-                  Декорация
-                </button>
-              </div>
-            </div>
-            <div class="zoom-grid__filter-wrapper">
-              <div class="zoom-grid__filter-label">Применение</div>
-              <div class="zoom-grid__filter-buttons">
-                <button
-                  class="zoom-grid__filter-button zoom-grid__filter-button_active"
-                  data-filter="*"
-                  type="button"
-                >
-                  ВСЕ
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".app-kesim"
-                  type="button"
-                >
-                  Резка
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".app-bukum"
-                  type="button"
-                >
-                  Гибка
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".app-kaynak"
-                  type="button"
-                >
-                  Сварка
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".app-boya"
-                  type="button"
-                >
-                  Покрытие
-                </button>
-              </div>
-            </div>
-            <div class="zoom-grid__filter-wrapper">
-              <div class="zoom-grid__filter-label">Технические</div>
-              <div class="zoom-grid__filter-buttons">
-                <button
-                  class="zoom-grid__filter-button zoom-grid__filter-button_active"
-                  data-filter="*"
-                  type="button"
-                >
-                  ВСЕ
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".tech-lazer"
-                  type="button"
-                >
-                  Лазерная резка
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".tech-abkant"
-                  type="button"
-                >
-                  Абкант-пресс
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".tech-punch"
-                  type="button"
-                >
-                  CNC Punch
-                </button>
-                <button
-                  class="zoom-grid__filter-button"
-                  data-filter=".tech-perfore"
-                  type="button"
-                >
-                  Перфорация
-                </button>
-              </div>
-            </div>
-            <div class="zoom-grid__grid row" id="projectsGrid">
-              <div
-                class="zoom-grid__item cat-2 app-kesim tech-lazer col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="zoom-grid__item-inner"
-                  href="../tr/proje/12/olumsuzluk-odasi/index.html"
-                >
+        <form method="post" action="/api/contact">
+          <div class="masonry masonry-block">
+            <div class="container">
+              <div class="masonry-block__head">
+                <div class="masonry__primary-filters">
+                  <button
+                    class="masonry__primary-filter-button masonry__primary-filter-button_active"
+                    data-tab-button="category"
+                    type="button"
+                  >
+                    Категории
+                  </button>
+                  <button
+                    class="masonry__primary-filter-button"
+                    data-tab-button="application"
+                    type="button"
+                  >
+                    Применение
+                  </button>
+                  <button
+                    class="masonry__primary-filter-button"
+                    data-tab-button="time"
+                    type="button"
+                  >
+                    Технические
+                  </button>
+                </div>
+                <div class="masonry__secondary-filters-wrapper">
                   <div
-                    class="zoom-grid__item-image"
-                    style="
-                      background-image:
-                        linear-gradient(
-                          rgba(0, 0, 0, 0.45),
-                          rgba(0, 0, 0, 0.45)
-                        ),
-                        url(&quot;../../Contents/Files/ProjeResim/320_olumsuzluk_odasi.JPG&quot;);
-                    "
-                  ></div>
-                  <div class="zoom-grid__item-content">
-                    <div class="zoom-grid__item-category">Искусство</div>
-                    <div class="zoom-grid__item-title">Комната бессмертия</div>
-                    <div class="zoom-grid__item-link">
-                      ПОДРОБНЕЕ <span class="icon-chevron-right"></span>
-                    </div>
+                    class="masonry__secondary-filters masonry__secondary-filters_active"
+                    data-tab-group="category"
+                  >
+                    <button
+                      class="masonry__secondary-filter-button masonry__secondary-filter-button_active"
+                      data-filter="*"
+                      type="button"
+                    >
+                      Все
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Kategoriler_2"
+                      type="button"
+                    >
+                      Искусство
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Kategoriler_1"
+                      type="button"
+                    >
+                      Архитектура
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Kategoriler_4"
+                      type="button"
+                    >
+                      Освещение
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Kategoriler_3"
+                      type="button"
+                    >
+                      Декорация
+                    </button>
                   </div>
-                </a>
-              </div>
-              <div
-                class="zoom-grid__item cat-2 app-kesim tech-punch col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="zoom-grid__item-inner"
-                  href="../tr/proje/2/eti-standi/index.html"
-                >
                   <div
-                    class="zoom-grid__item-image"
-                    style="
-                      background-image:
-                        linear-gradient(
-                          rgba(0, 0, 0, 0.45),
-                          rgba(0, 0, 0, 0.45)
-                        ),
-                        url(&quot;../../Contents/Files/ProjeResim/2_eti_standi.jpg&quot;);
-                    "
-                  ></div>
-                  <div class="zoom-grid__item-content">
-                    <div class="zoom-grid__item-category">Искусство</div>
-                    <div class="zoom-grid__item-title">Стенд Eti</div>
-                    <div class="zoom-grid__item-link">
-                      ПОДРОБНЕЕ <span class="icon-chevron-right"></span>
-                    </div>
+                    class="masonry__secondary-filters"
+                    data-tab-group="application"
+                    style="display: none"
+                  >
+                    <button
+                      class="masonry__secondary-filter-button masonry__secondary-filter-button_active"
+                      data-filter="*"
+                      type="button"
+                    >
+                      ВСЕ
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Uzmanlik_1"
+                      type="button"
+                    >
+                      Резка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Uzmanlik_2"
+                      type="button"
+                    >
+                      Гибка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Uzmanlik_3"
+                      type="button"
+                    >
+                      Сварка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Uzmanlik_4"
+                      type="button"
+                    >
+                      Покрытие
+                    </button>
                   </div>
-                </a>
-              </div>
-              <div
-                class="zoom-grid__item cat-2 app-bukum tech-abkant col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="zoom-grid__item-inner"
-                  href="../tr/proje/8/super-step/index.html"
-                >
                   <div
-                    class="zoom-grid__item-image"
-                    style="
-                      background-image:
-                        linear-gradient(
-                          rgba(0, 0, 0, 0.45),
-                          rgba(0, 0, 0, 0.45)
-                        ),
-                        url(&quot;../../Contents/Files/ProjeResim/8_super_step.jpg&quot;);
-                    "
-                  ></div>
-                  <div class="zoom-grid__item-content">
-                    <div class="zoom-grid__item-category">Искусство</div>
-                    <div class="zoom-grid__item-title">Super Step</div>
-                    <div class="zoom-grid__item-link">
-                      ПОДРОБНЕЕ <span class="icon-chevron-right"></span>
-                    </div>
+                    class="masonry__secondary-filters"
+                    data-tab-group="time"
+                    style="display: none"
+                  >
+                    <button
+                      class="masonry__secondary-filter-button masonry__secondary-filter-button_active"
+                      data-filter="*"
+                      type="button"
+                    >
+                      Все
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_1"
+                      type="button"
+                    >
+                      CNC Лазерная резка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_2"
+                      type="button"
+                    >
+                      CNC Абкант-пресс
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_3"
+                      type="button"
+                    >
+                      Сварная сетка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_4"
+                      type="button"
+                    >
+                      CNC Гибка профиля
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_5"
+                      type="button"
+                    >
+                      CNC Гибка труб
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_6"
+                      type="button"
+                    >
+                      Router резка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_7"
+                      type="button"
+                    >
+                      Перфорация
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_8"
+                      type="button"
+                    >
+                      CNC Punch
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_9"
+                      type="button"
+                    >
+                      Сварка
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_10"
+                      type="button"
+                    >
+                      Покрытие
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_11"
+                      type="button"
+                    >
+                      Гильотина
+                    </button>
+                    <button
+                      class="masonry__secondary-filter-button"
+                      data-filter="Teknik_12"
+                      type="button"
+                    >
+                      CNC Вальцовая гибка
+                    </button>
                   </div>
-                </a>
+                </div>
               </div>
-              <div
-                class="zoom-grid__item cat-3 app-kesim tech-perfore col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="zoom-grid__item-inner"
-                  href="../tr/proje/6/2022-katar-dunya-kupasi/index.html"
+              <div class="masonry__grid masonry-block__grid row">
+                <div
+                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <div
-                    class="zoom-grid__item-image"
-                    style="
-                      background-image:
-                        linear-gradient(
-                          rgba(0, 0, 0, 0.45),
-                          rgba(0, 0, 0, 0.45)
-                        ),
-                        url(&quot;../../Contents/Files/ProjeResim/6_2022_katar_dunya_kupasi.jpg&quot;);
-                    "
-                  ></div>
-                  <div class="zoom-grid__item-content">
-                    <div class="zoom-grid__item-category">Декорация</div>
-                    <div class="zoom-grid__item-title">
-                      Кубок мира Катар 2022
+                  <a
+                    class="masonry-item"
+                    data-filters="Uzmanlik_1, Uzmanlik_2, Uzmanlik_3, Uzmanlik_4, Teknik_1, Teknik_11, Teknik_2, Teknik_9, Teknik_10, Kategoriler_2"
+                    href="../../tr/proje/12/olumsuzluk-odasi/index.html"
+                  >
+                    <div class="masonry-item__image-wrapper">
+                      <img
+                        alt="Комната бессмертия"
+                        class="masonry-item__image"
+                        src="../../Contents/Files/ProjeResim/320_olumsuzluk_odasi.JPG"
+                      />
                     </div>
-                    <div class="zoom-grid__item-link">
-                      ПОДРОБНЕЕ <span class="icon-chevron-right"></span>
+                    <span class="masonry-item__title">Комната бессмертия</span>
+                    <span class="masonry-item__category">Искусство</span>
+                  </a>
+                </div>
+                <div
+                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
+                >
+                  <a
+                    class="masonry-item"
+                    data-filters="Uzmanlik_1, Uzmanlik_2, Teknik_1, Teknik_6, Teknik_2, Teknik_3, Teknik_4, Teknik_5, Kategoriler_2"
+                    href="../../tr/proje/2/eti-standi/index.html"
+                  >
+                    <div class="masonry-item__image-wrapper">
+                      <img
+                        alt="Стенд Eti"
+                        class="masonry-item__image"
+                        src="../../Contents/Files/ProjeResim/2_eti_standi.jpg"
+                      />
                     </div>
-                  </div>
-                </a>
+                    <span class="masonry-item__title">Стенд Eti</span>
+                    <span class="masonry-item__category">Искусство</span>
+                  </a>
+                </div>
+                <div
+                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
+                >
+                  <a
+                    class="masonry-item"
+                    data-filters="Uzmanlik_1, Uzmanlik_2, Teknik_1, Teknik_11, Teknik_3, Kategoriler_2"
+                    href="../../tr/proje/8/super-step/index.html"
+                  >
+                    <div class="masonry-item__image-wrapper">
+                      <img
+                        alt="Super Step"
+                        class="masonry-item__image"
+                        src="../../Contents/Files/ProjeResim/8_super_step.jpg"
+                      />
+                    </div>
+                    <span class="masonry-item__title">Super Step</span>
+                    <span class="masonry-item__category">Искусство</span>
+                  </a>
+                </div>
+                <div
+                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
+                >
+                  <a
+                    class="masonry-item"
+                    data-filters="Uzmanlik_1, Uzmanlik_2, Teknik_6, Teknik_2, Teknik_4, Kategoriler_3"
+                    href="../../tr/proje/6/2022-katar-dunya-kupasi/index.html"
+                  >
+                    <div class="masonry-item__image-wrapper">
+                      <img
+                        alt="Кубок мира Катар 2022"
+                        class="masonry-item__image"
+                        src="../../Contents/Files/ProjeResim/6_2022_katar_dunya_kupasi.jpg"
+                      />
+                    </div>
+                    <span class="masonry-item__title"
+                      >Кубок мира Катар 2022</span
+                    >
+                    <span class="masonry-item__category">Декорация</span>
+                  </a>
+                </div>
+                <div
+                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
+                >
+                  <a
+                    class="masonry-item"
+                    data-filters="Uzmanlik_1, Uzmanlik_2, Teknik_1, Teknik_7, Teknik_2, Teknik_5, Kategoriler_1"
+                    href="../../tr/proje/7/racsha/index.html"
+                  >
+                    <div class="masonry-item__image-wrapper">
+                      <img
+                        alt="Racsha"
+                        class="masonry-item__image"
+                        src="../../Contents/Files/ProjeResim/7_racsha.jpg"
+                      />
+                    </div>
+                    <span class="masonry-item__title">Racsha</span>
+                    <span class="masonry-item__category">Архитектура</span>
+                  </a>
+                </div>
+                <div
+                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
+                >
+                  <a
+                    class="masonry-item"
+                    data-filters="Uzmanlik_2, Teknik_12, Teknik_2, Teknik_4, Kategoriler_1"
+                    href="../../tr/proje/9/torium-avm/index.html"
+                  >
+                    <div class="masonry-item__image-wrapper">
+                      <img
+                        alt="Torium AVM"
+                        class="masonry-item__image"
+                        src="../../Contents/Files/ProjeResim/9_torium_avm.jpg"
+                      />
+                    </div>
+                    <span class="masonry-item__title">Torium AVM</span>
+                    <span class="masonry-item__category">Архитектура</span>
+                  </a>
+                </div>
               </div>
-              <div
-                class="zoom-grid__item cat-1 app-kesim tech-lazer col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="zoom-grid__item-inner"
-                  href="../tr/proje/7/racsha/index.html"
-                >
-                  <div
-                    class="zoom-grid__item-image"
-                    style="
-                      background-image:
-                        linear-gradient(
-                          rgba(0, 0, 0, 0.45),
-                          rgba(0, 0, 0, 0.45)
-                        ),
-                        url(&quot;../../Contents/Files/ProjeResim/7_racsha.jpg&quot;);
-                    "
-                  ></div>
-                  <div class="zoom-grid__item-content">
-                    <div class="zoom-grid__item-category">Архитектура</div>
-                    <div class="zoom-grid__item-title">Racsha</div>
-                    <div class="zoom-grid__item-link">
-                      ПОДРОБНЕЕ <span class="icon-chevron-right"></span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="zoom-grid__item cat-1 app-bukum tech-abkant col-12 col-md-6 col-xl-4"
-              >
-                <a
-                  class="zoom-grid__item-inner"
-                  href="../tr/proje/9/torium-avm/index.html"
-                >
-                  <div
-                    class="zoom-grid__item-image"
-                    style="
-                      background-image:
-                        linear-gradient(
-                          rgba(0, 0, 0, 0.45),
-                          rgba(0, 0, 0, 0.45)
-                        ),
-                        url(&quot;../../Contents/Files/ProjeResim/9_torium_avm.jpg&quot;);
-                    "
-                  ></div>
-                  <div class="zoom-grid__item-content">
-                    <div class="zoom-grid__item-category">Архитектура</div>
-                    <div class="zoom-grid__item-title">Torium AVM</div>
-                    <div class="zoom-grid__item-link">
-                      ПОДРОБНЕЕ <span class="icon-chevron-right"></span>
-                    </div>
-                  </div>
-                </a>
+              <div class="show-more">
+                <div class="container">
+                  <a
+                    class="show-more__link show-more__link_inverted"
+                    href="index.html#"
+                    >больше проектов</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </form>
+        <div class="zoom-posts reviews-block_template_zoom" id="blogPanel">
+          <div class="container">
+            <div class="zoom-posts__head">
+              <div class="zoom-posts__title">блог</div>
+              <a
+                class="zoom-posts__more-link zoom-posts__more-link_inverted"
+                href="../blog/index.html"
+                >Все записи</a
+              >
+            </div>
+          </div>
+          <div class="posts">
+            <div class="container">
+              <div class="row">
+                <div class="posts__item col-12 col-lg-4">
+                  <a
+                    class="posts__item-inner"
+                    href="../../tr/blog/18/cnc-fiber-lazer-kesim/index.html"
+                  >
+                    <img
+                      alt="CNC Fiber Lazer Kəsim"
+                      class="posts__image"
+                      src="../../Contents/Files/BlogResim/1721_cnc_fiber_lazer_kesim.webp"
+                    />
+                    <span class="posts__item-content">
+                      <span class="posts__item-footer">
+                        <span class="posts__category">E-Бюллетень</span>
+                        <span class="posts__date">09.07.2025</span>
+                      </span>
+                      <span class="posts__item-title"
+                        >CNC Fiber Lazer Kəsim</span
+                      >
+                    </span>
+                  </a>
+                </div>
+                <div class="posts__item col-12 col-lg-4">
+                  <a
+                    class="posts__item-inner"
+                    href="../../tr/blog/16/2019-yapi-fuari-istanbul/index.html"
+                  >
+                    <img
+                      alt="2019 Yapı Fuarı İstanbul"
+                      class="posts__image"
+                      src="../../Contents/Files/BlogResim/6894_2019_yapi_fuari_istanbul.jpg"
+                    />
+                    <span class="posts__item-content">
+                      <span class="posts__item-footer">
+                        <span class="posts__category">Новости</span>
+                        <span class="posts__date">24.01.2020</span>
+                      </span>
+                      <span class="posts__item-title"
+                        >2019 Yapı Fuarı İstanbul</span
+                      >
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <div
         class="modal fade"
