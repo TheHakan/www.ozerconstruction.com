@@ -9,6 +9,9 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/TR/:path*", "destination": "/tr/:path*", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/api/contact/", "destination": "/api/contact" }
   ]
