@@ -1,6 +1,6 @@
 /* SCZ Metal — universal contact form AJAX handler */
 (function () {
-  var API = '/api/contact';
+  var API = '/api/contact.php';
 
   /* Find a field value inside a container by trying multiple name/id substrings */
   function pick(root, keys) {
