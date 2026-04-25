@@ -1,9 +1,9 @@
 # Website Delivery & Content Inventory Report
 
-**Project:** SCZ Metal MMC — Corporate Website
-**Domain:** scz.az
+**Project:** Myz Iron MMC — Corporate Website
+**Domain:** myziron.com
 **Prepared by:** Hakan
-**Client:** SCZ Metal MMC
+**Client:** Myz Iron MMC
 **Report Date:** April 16, 2026
 **Planned Delivery Date:** April 23, 2026
 **Project Status:** 🟡 In Progress
@@ -12,9 +12,9 @@
 
 ## 1. Project Overview
 
-This document serves as the official **Website Content Inventory, Change Log, and Handover Report** for the SCZ Metal MMC corporate website hosted at `scz.az`. The site represents a full-service metal manufacturing and industrial services company offering CNC machining, laser cutting, bending, welding, and coating services.
+This document serves as the official **Website Content Inventory, Change Log, and Handover Report** for the Myz Iron MMC corporate website hosted at `myziron.com`. The site represents a full-service metal manufacturing and industrial services company offering CNC machining, laser cutting, bending, welding, and coating services.
 
-The website was developed by **Hakan** using a reference site (`solmazaluminyum.com`) provided by the client as a structural and design baseline. The original site was cloned and fully reworked — all branding, content, contact information, translations, SEO metadata, and media assets have been replaced or updated to reflect SCZ Metal MMC's identity.
+The website was developed by **Hakan** using a reference site (`solmazaluminyum.com`) provided by the client as a structural and design baseline. The original site was cloned and fully reworked — all branding, content, contact information, translations, SEO metadata, and media assets have been replaced or updated to reflect Myz Iron MMC's identity.
 
 **Technology Stack:** Pure HTML, CSS, JavaScript
 **Development Method:** Cloned from reference site via `wget`, edited directly on source files
@@ -53,7 +53,7 @@ Total Pages: **22 core pages** (excluding individual product/sample pages) × 4 
 
 | Page | Slug | Languages |
 | --- | --- | --- |
-| SCZ Metalı Tanıyın | `scz-metali-taniyin` | AZ, EN, TR, RU |
+| Myz Ironu Tanıyın | `myzironu-taniyin` | AZ, EN, TR, RU |
 | Keyfiyyət Siyasətimiz | `keyfiyyat-siyasetimiz` | AZ, EN, TR, RU |
 | Missiya və Vizyonumuz | `missiya-ve-vizyonumuz` | AZ, EN, TR, RU |
 
@@ -113,9 +113,9 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **Logo replaced** | Removed Solmaz Aluminyum logo, inserted SCZ Metal MMC official logo | ✅ Done |
-| 2 | **Brand name replacement** | All instances of "Solmaz Aluminyum" replaced with "SCZ Metal" across all pages and all languages | ✅ Done |
-| 3 | **Brand images replaced** | Company-specific images and banners updated from Solmaz assets to SCZ Metal assets | ✅ Done |
+| 1 | **Logo replaced** | Removed Solmaz Aluminyum logo, inserted Myz Iron MMC official logo | ✅ Done |
+| 2 | **Brand name replacement** | All instances of "Solmaz Aluminyum" replaced with "Myz Iron" across all pages and all languages | ✅ Done |
+| 3 | **Brand images replaced** | Company-specific images and banners updated from Solmaz assets to Myz Iron assets | ✅ Done |
 
 ---
 
@@ -143,9 +143,9 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **Contact details updated** | Phone, email, and address replaced with SCZ Metal MMC official contact information | ✅ Done |
-| 2 | **Physical address updated** | Company address updated to SCZ Metal MMC location | ✅ Done |
-| 3 | **Social media links updated** | All social links replaced with SCZ Metal MMC official social media accounts | ✅ Done |
+| 1 | **Contact details updated** | Phone, email, and address replaced with Myz Iron MMC official contact information | ✅ Done |
+| 2 | **Physical address updated** | Company address updated to Myz Iron MMC location | ✅ Done |
+| 3 | **Social media links updated** | All social links replaced with Myz Iron MMC official social media accounts | ✅ Done |
 | 4 | **Google Maps fixed** | Google Maps embed on Contact page was not rendering correctly — fixed and now fully functional | ✅ Done |
 
 ---
@@ -154,10 +154,10 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **Meta titles updated** | All page `<title>` tags updated for SCZ Metal MMC | ✅ Done |
-| 2 | **Meta descriptions updated** | All `<meta name="description">` values rewritten for SCZ Metal | ✅ Done |
+| 1 | **Meta titles updated** | All page `<title>` tags updated for Myz Iron MMC | ✅ Done |
+| 2 | **Meta descriptions updated** | All `<meta name="description">` values rewritten for Myz Iron | ✅ Done |
 | 3 | **Meta keywords updated** | Keywords revised to reflect metal manufacturing, CNC, welding services | ✅ Done |
-| 4 | **OG tags updated** | Open Graph tags updated with SCZ Metal branding | ✅ Done |
+| 4 | **OG tags updated** | Open Graph tags updated with Myz Iron branding | ✅ Done |
 
 ---
 
@@ -165,7 +165,7 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **HD image replacement** | All placeholder/reference site images to be replaced with high-quality images sourced for SCZ Metal | 🔴 Pending |
+| 1 | **HD image replacement** | All placeholder/reference site images to be replaced with high-quality images sourced for Myz Iron | 🔴 Pending |
 | 2 | **Per-page image audit** | Each page's images to be individually reviewed and replaced | 🔴 Pending |
 
 > **Note:** A detailed per-page image inventory table will be added here upon completion of image replacement task before final delivery on April 23, 2026.
@@ -188,7 +188,7 @@ All changes listed below were applied across all applicable language versions of
 
 ## 6. Reference & Methodology Note
 
-> The design, layout, and structural foundation of `scz.az` is based on the reference website `solmazaluminyum.com`, which was provided by the client as the desired design direction. The original site was cloned using `wget` and subsequently modified. All content, branding, contact information, translations, SEO data, and media assets specific to Solmaz Aluminyum have been fully replaced with SCZ Metal MMC materials. The font, color scheme, and page layout were intentionally retained per client instruction.
+> The design, layout, and structural foundation of `myziron.com` is based on the reference website `solmazaluminyum.com`, which was provided by the client as the desired design direction. The original site was cloned using `wget` and subsequently modified. All content, branding, contact information, translations, SEO data, and media assets specific to Solmaz Aluminyum have been fully replaced with Myz Iron MMC materials. The font, color scheme, and page layout were intentionally retained per client instruction.
 
 ---
 
@@ -197,8 +197,8 @@ All changes listed below were applied across all applicable language versions of
 | | |
 | --- | --- |
 | **Prepared by** | Hakan |
-| **Client** | SCZ Metal MMC |
-| **Website** | scz.az |
+| **Client** | Myz Iron MMC |
+| **Website** | myziron.com |
 | **Report Date** | April 16, 2026 |
 | **Target Delivery** | April 23, 2026 |
 | **Client Signature** | ___________________________ |
