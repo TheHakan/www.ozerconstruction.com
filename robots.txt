@@ -5,4 +5,4 @@ Disallow: /Controls/
 Disallow: /Web.config
 Disallow: /Global.asax
 
-Sitemap: http://scz.az/sitemap.xml
+Sitemap: http://myziron.com/sitemap.xml
