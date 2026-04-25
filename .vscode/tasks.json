@@ -4,7 +4,7 @@
     {
       "label": "ESLint",
       "type": "shell",
-      "command": "pnpm exec eslint \"**/*.js\" \"**/*.mjs\" --cache --format compact",
+      "command": "npm run lint:full",
       "isBackground": false,
       "presentation": {
         "reveal": "always",
@@ -18,7 +18,7 @@
     {
       "label": "Prettier",
       "type": "shell",
-      "command": "pnpm exec prettier --check .",
+      "command": "npm run prettier:check",
       "isBackground": false,
       "presentation": {
         "reveal": "always",
