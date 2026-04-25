@@ -93,7 +93,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 | Language | Code | Folder | Status | Notes |
 | --- | --- | --- | --- | --- |
 | Azerbaijani | AZ | `/az/` | ✅ Complete | Primary language |
-| English | EN | `/EN/` `/en/` `/En/` | 🟡 Under Revision | 3 case variants exist — duplicate issue (see §10) |
+| English | EN | `/en/` `/en/` `/en/` | 🟡 Under Revision | 3 case variants exist — duplicate issue (see §10) |
 | Turkish | TR | `/TR/` `/tr/` | 🟡 Under Revision | 2 case variants exist — duplicate issue (see §10) |
 | Russian | RU | `/ru/` | ✅ Added | New — not present in reference site |
 
@@ -121,7 +121,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 | Language | URL |
 | --- | --- |
 | AZ | `myziron.com/az/` |
-| EN | `myziron.com/EN/` |
+| EN | `myziron.com/en/` |
 | TR | `myziron.com/TR/` |
 | RU | `myziron.com/ru/` |
 
@@ -140,7 +140,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 | Language | URL |
 | --- | --- |
 | AZ | `myziron.com/az/haqqimizda/myziron-mmc-taniyin/` |
-| EN | `myziron.com/EN/about-us/get-to-know/` |
+| EN | `myziron.com/en/about-us/get-to-know/` |
 | TR | `myziron.com/TR/hakkimizda/myziron-mmc-taniyin/` |
 | RU | `myziron.com/ru/o-nas/uznayte-myziron-mmc/` |
 
@@ -247,7 +247,7 @@ myziron.com/ (public_html)
 │           ├── giyotin-qayci/
 │           └── perfore/
 │
-├── EN/                           ← English language root (⚠️ see §10 — case issue)
+├── en/                           ← English language root (⚠️ see §10 — case issue)
 │   ├── index.html
 │   ├── about-us/
 │   │   ├── get-to-know/
@@ -404,7 +404,7 @@ myziron.com/ (public_html)
 | `<meta name="keywords">` | ✅ Updated | CNC, metal, welding, cutting keywords |
 | Open Graph (`og:title`, `og:description`, `og:image`) | ✅ Updated | MyZiron branding applied |
 | `lang` attribute on `<html>` | 🟡 Verify | Should be `az`, `en`, `tr`, `ru` per page |
-| Canonical URLs | 🔴 Not confirmed | Check for duplicate content from EN/en/En folders |
+| Canonical URLs | 🔴 Not confirmed | Check for duplicate content from en/en/En folders |
 | `robots.txt` | 🔴 Not confirmed | Verify exists and is correct |
 | `sitemap.xml` | 🔴 Not confirmed | Generate before deployment |
 | Image `alt` tags | 🔴 Pending | Add after HD image replacement |
@@ -415,7 +415,7 @@ myziron.com/ (public_html)
 
 | # | Issue | Severity | Notes |
 | --- | --- | --- | --- |
-| 1 | **EN folder case variants** (`/EN/`, `/en/`, `/En/`) | 🔴 High | Three case variants of the English folder exist. On Linux servers (Hostinger) paths are case-sensitive — this will cause 404 errors. Consolidate to one canonical folder (recommend `/en/`) and redirect others. |
+| 1 | **EN folder case variants** (`/en/`, `/en/`, `/en/`) | 🔴 High | Three case variants of the English folder exist. On Linux servers (Hostinger) paths are case-sensitive — this will cause 404 errors. Consolidate to one canonical folder (recommend `/en/`) and redirect others. |
 | 2 | **TR folder case variants** (`/TR/`, `/tr/`) | 🔴 High | Same issue as above. Consolidate to `/tr/`. |
 | 3 | **`expertice` folder typo** (EN) | 🟡 Medium | Should be `expertise`. Fix slug and update all internal links. |
 | 4 | **`image/trash/` folder** | 🟡 Medium | Contains leftover unused images from reference site. Delete before deployment to keep server clean. |
@@ -454,7 +454,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 
 | # | Task | Priority | Due |
 | --- | --- | --- | --- |
-| 1 | Resolve EN/en/En folder case conflict | 🔴 Critical | Before deploy |
+| 1 | Resolve en/en/En folder case conflict | 🔴 Critical | Before deploy |
 | 2 | Resolve TR/tr folder case conflict | 🔴 Critical | Before deploy |
 | 3 | Replace all images with HD versions | 🔴 High | Apr 23 |
 | 4 | Complete EN grammatical revision | 🔴 High | Apr 23 |
