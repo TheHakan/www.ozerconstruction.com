@@ -1,6 +1,6 @@
 <?php
 /**
- * SCZ Metal — Contact Form Handler (PHP / Hostinger)
+ * MyzIron — Contact Form Handler (PHP / Hostinger)
  * Replacement for the Vercel serverless api/contact.js
  *
  * Requires cURL and OpenSSL (enabled on all Hostinger shared plans).
@@ -15,13 +15,13 @@ if (file_exists(__DIR__ . '/../.env.php')) {
     require __DIR__ . '/../.env.php';
 }
 
-define('SMTP_HOST',   getenv('SMTP_HOST')   ?: 'mail.scz.az');
+define('SMTP_HOST',   getenv('SMTP_HOST')   ?: 'mail.myziron.com');
 define('SMTP_PORT',   (int)(getenv('SMTP_PORT')   ?: 587));
 define('SMTP_SECURE', getenv('SMTP_SECURE') === 'true'); // false = STARTTLS
 define('SMTP_USER',   getenv('SMTP_USER')   ?: '');
 define('SMTP_PASS',   getenv('SMTP_PASS')   ?: '');
-define('MAIL_TO',     'info@scz.az');
-define('ALLOWED_ORIGIN', 'https://scz.az');
+define('MAIL_TO',     'info@myziron.com');
+define('ALLOWED_ORIGIN', 'https://myziron.com');
 
 // ── CORS ─────────────────────────────────────────────────────────────────────
 header('Access-Control-Allow-Origin: ' . ALLOWED_ORIGIN);
@@ -105,7 +105,7 @@ $subject = '=?UTF-8?B?' . base64_encode('Web Saytı - Əlaqə Forması: ' . $nam
 $headers = implode("\r\n", [
     'MIME-Version: 1.0',
     'Content-Type: text/html; charset=UTF-8',
-    'From: "SCZ Metal Web" <' . SMTP_USER . '>',
+    'From: "MyZiron Web" <' . SMTP_USER . '>',
     'Reply-To: ' . $email,
     'X-Mailer: PHP/' . phpversion(),
 ]);
@@ -178,7 +178,7 @@ function send_smtp(string $body, string $subject): bool {
 
     $msg = "MIME-Version: 1.0\r\n"
          . "Content-Type: text/html; charset=UTF-8\r\n"
-         . "From: \"SCZ Metal Web\" <{$from}>\r\n"
+         . "From: \"MyZiron Web\" <{$from}>\r\n"
          . "To: {$to}\r\n"
          . "Reply-To: " . addslashes(MAIL_TO) . "\r\n"
          . "Subject: {$subject}\r\n"
