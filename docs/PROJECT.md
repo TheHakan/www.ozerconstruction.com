@@ -1,12 +1,12 @@
-# Project Documentation: SCZ Metal MMC Corporate Website (scz.az)
+# Project Documentation: MyZiron MMC Corporate Website (myziron.com)
 
 ## Website Technical Specification Document (WTS)
 
 **Document Type:** Website Technical Specification (WTS)
-**Project:** SCZ Metal MMC — Corporate Website
-**Domain:** scz.az
+**Project:** MyZiron MMC — Corporate Website
+**Domain:** myziron.com
 **Prepared by:** Hakan
-**Client:** SCZ Metal MMC
+**Client:** MyZiron MMC
 **Version:** v1.0 — Draft
 **Created:** April 16, 2026
 **Target Delivery:** April 23, 2026
@@ -36,8 +36,8 @@
 
 | Field | Details |
 | --- | --- |
-| **Client** | SCZ Metal MMC |
-| **Website** | scz.az |
+| **Client** | MyZiron MMC |
+| **Website** | myziron.com |
 | **Industry** | Metal Manufacturing & Industrial Services |
 | **Services** | CNC Laser/Router/Punch Cutting, Bending, Welding, Coating |
 | **Developer** | Hakan |
@@ -52,7 +52,7 @@
 
 ### About the Project
 
-SCZ Metal MMC required a corporate website to represent their metal manufacturing business. The client provided `solmazaluminyum.com` as a design and structural reference. The site was cloned using `wget` and fully reworked — all branding, content, contact details, translations, SEO metadata, and media assets have been replaced to reflect SCZ Metal MMC's identity.
+MyZiron MMC required a corporate website to represent their metal manufacturing business. The client provided `solmazaluminyum.com` as a design and structural reference. The site was cloned using `wget` and fully reworked — all branding, content, contact details, translations, SEO metadata, and media assets have been replaced to reflect MyZiron MMC's identity.
 
 ---
 
@@ -78,8 +78,8 @@ SCZ Metal MMC required a corporate website to represent their metal manufacturin
 
 | Element | Value |
 | --- | --- |
-| **Company Name** | SCZ Metal MMC |
-| **Logo** | SCZ Metal Logo (replaced from Solmaz Aluminyum) |
+| **Company Name** | MyZiron MMC |
+| **Logo** | MyZiron Logo (replaced from Solmaz Aluminyum) |
 | **Primary Font** | Alumni Sans |
 | **Previous Font** | Teko (reference site font — replaced) |
 | **Brand Colors** | *(To be confirmed by client)* |
@@ -120,10 +120,10 @@ SCZ Metal MMC required a corporate website to represent their metal manufacturin
 
 | Language | URL |
 | --- | --- |
-| AZ | `scz.az/AZ/` |
-| EN | `scz.az/EN/` |
-| TR | `scz.az/TR/` |
-| RU | `scz.az/RU/` |
+| AZ | `myziron.com/AZ/` |
+| EN | `myziron.com/EN/` |
+| TR | `myziron.com/TR/` |
+| RU | `myziron.com/RU/` |
 
 ---
 
@@ -131,18 +131,18 @@ SCZ Metal MMC required a corporate website to represent their metal manufacturin
 
 | Page (AZ) | Slug (AZ) | Slug (EN) | Slug (TR) | Slug (RU) | Status |
 | --- | --- | --- | --- | --- | --- |
-| SCZ Metalı Tanıyın | `scz-metali-taniyin` | `get-to-know` | `scz-metali-taniyin` | `uznayte-scz-metal` | 🟡 |
+| MyZiron MMC Tanıyın | `myziron-mmc-taniyin` | `get-to-know` | `myziron-mmc-taniyin` | `uznayte-myziron-mmc` | 🟡 |
 | Keyfiyyət Siyasətimiz | `keyfiyyat-siyasetimiz` | `quality-policy` | `kalite-politikamiz` | `politika-kachestva` | 🟡 |
 | Missiya və Vizyonumuz | `missiya-ve-vizyonumuz` | `our-mission-vision` | `misyon-ve-vizyonumuz` | `missiya-i-videniye` | 🟡 |
 
-**Full URLs (example — SCZ Metalı Tanıyın):**
+**Full URLs (example — MyZiron MMC Tanıyın):**
 
 | Language | URL |
 | --- | --- |
-| AZ | `scz.az/AZ/haqqimizda/scz-metali-taniyin/` |
-| EN | `scz.az/EN/about-us/get-to-know/` |
-| TR | `scz.az/TR/hakkimizda/scz-metali-taniyin/` |
-| RU | `scz.az/RU/o-nas/uznayte-scz-metal/` |
+| AZ | `myziron.com/AZ/haqqimizda/myziron-mmc-taniyin/` |
+| EN | `myziron.com/EN/about-us/get-to-know/` |
+| TR | `myziron.com/TR/hakkimizda/myziron-mmc-taniyin/` |
+| RU | `myziron.com/RU/o-nas/uznayte-myziron-mmc/` |
 
 ---
 
@@ -195,7 +195,7 @@ SCZ Metal MMC required a corporate website to represent their metal manufacturin
 ## 6. Folder Structure
 
 ```text
-scz.az/ (public_html)
+myziron.com/ (public_html)
 │
 ├── assets/
 │   ├── css/
@@ -230,7 +230,7 @@ scz.az/ (public_html)
 │   ├── haqqimizda/
 │   │   ├── keyfiyyat-siyasetimiz/
 │   │   ├── missiya-ve-vizyonumuz/
-│   │   └── scz-metali-taniyin/
+│   │   └── myzironu-taniyin/
 │   └── ixtisaslarimiz/
 │       ├── boya/
 │       ├── qaynaq/
@@ -285,7 +285,7 @@ scz.az/ (public_html)
 │   ├── hakkimizda/
 │   │   ├── kalite-politikamiz/
 │   │   ├── misyon-ve-vizyonumuz/
-│   │   └── scz-metali-taniyin/
+│   │   └── myzironu-taniyin/
 │   └── uzmanliklarimiz/
 │       ├── boya/
 │       ├── kaynak/
@@ -311,7 +311,7 @@ scz.az/ (public_html)
     ├── o-nas/
     │   ├── missiya-i-videniye/
     │   ├── politika-kachestva/
-    │   └── uznayte-scz-metal/
+    │   └── uznayte-myziron/
     └── uslugi/
         ├── pokrytiye/
         ├── svarka/
@@ -354,7 +354,7 @@ scz.az/ (public_html)
 | Page | Language | Image Count | Images Replaced | HD Source | Status |
 | --- | --- | --- | --- | --- | --- |
 | Home (Hero Slider) | ALL | TBD | 🔴 Pending | TBD | 🔴 |
-| SCZ Metalı Tanıyın | ALL | TBD | 🔴 Pending | TBD | 🔴 |
+| MyZironu Tanıyın | ALL | TBD | 🔴 Pending | TBD | 🔴 |
 | Keyfiyyət Siyasətimiz | ALL | TBD | 🔴 Pending | TBD | 🔴 |
 | Missiya və Vizyonumuz | ALL | TBD | 🔴 Pending | TBD | 🔴 |
 | Kəsim | ALL | TBD | 🔴 Pending | TBD | 🔴 |
@@ -389,7 +389,7 @@ scz.az/ (public_html)
 | 5 | **Mobile Navigation** | Hamburger menu for mobile/tablet viewports | 🟡 To verify |
 | 6 | **Responsive Layout** | Mobile-first responsive design across all pages | 🟡 Final check pending |
 | 7 | **Image Gallery / Lightbox** | Project and sample product image galleries | 🟡 To verify |
-| 8 | **WhatsApp / Social Links** | Links to SCZ Metal official social accounts | ✅ Updated |
+| 8 | **WhatsApp / Social Links** | Links to MyZiron official social accounts | ✅ Updated |
 | 9 | **Smooth Scroll / Animations** | CSS/JS scroll animations inherited from reference site | 🟡 To verify |
 | 10 | **Panorama Addon** | Revolution Slider panorama addon present in JS | 🟡 Check if used |
 
@@ -399,10 +399,10 @@ scz.az/ (public_html)
 
 | Element | Status | Notes |
 | --- | --- | --- |
-| `<title>` tags | ✅ Updated | All pages updated for SCZ Metal |
-| `<meta name="description">` | ✅ Updated | Rewritten for SCZ Metal services |
+| `<title>` tags | ✅ Updated | All pages updated for MyZiron |
+| `<meta name="description">` | ✅ Updated | Rewritten for MyZiron services |
 | `<meta name="keywords">` | ✅ Updated | CNC, metal, welding, cutting keywords |
-| Open Graph (`og:title`, `og:description`, `og:image`) | ✅ Updated | SCZ Metal branding applied |
+| Open Graph (`og:title`, `og:description`, `og:image`) | ✅ Updated | MyZiron branding applied |
 | `lang` attribute on `<html>` | 🟡 Verify | Should be `az`, `en`, `tr`, `ru` per page |
 | Canonical URLs | 🔴 Not confirmed | Check for duplicate content from EN/en/En folders |
 | `robots.txt` | 🔴 Not confirmed | Verify exists and is correct |
@@ -421,7 +421,7 @@ scz.az/ (public_html)
 | 4 | **`image/trash/` folder** | 🟡 Medium | Contains leftover unused images from reference site. Delete before deployment to keep server clean. |
 | 5 | **Duplicate `img/` and `assets/img/` folders** | 🟡 Medium | Two separate image folders exist. Audit and consolidate before deployment. |
 | 6 | **Blog post subfolders** (`/16/`, `/18/`) | 🟡 Low | Old blog post pages from reference site. Confirm if these are needed or should be removed. |
-| 7 | **Old project subfolders** (`/2/`, `/6/`, `/7/`...) | 🟡 Low | Old project pages from reference site. Confirm if these are SCZ Metal projects or leftover data. |
+| 7 | **Old project subfolders** (`/2/`, `/6/`, `/7/`...) | 🟡 Low | Old project pages from reference site. Confirm if these are MyZiron projects or leftover data. |
 
 ---
 
@@ -431,7 +431,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 
 | # | Category | Change | Status |
 | --- | --- | --- | --- |
-| 1 | Branding | Logo replaced — Solmaz Aluminyum → SCZ Metal MMC | ✅ Done |
+| 1 | Branding | Logo replaced — Solmaz Aluminyum → MyZiron MMC | ✅ Done |
 | 2 | Branding | All brand name text replaced site-wide | ✅ Done |
 | 3 | Branding | Brand images and banners replaced | ✅ Done |
 | 4 | Typography | Font changed from Teko → Alumni Sans | ✅ Done |
@@ -439,9 +439,9 @@ All changes applied by Hakan across all language versions unless stated otherwis
 | 6 | Translation | Russian (RU) version — added from scratch | ✅ Done |
 | 7 | Translation | English (EN) grammatical revision | 🟡 In Progress |
 | 8 | Translation | Turkish (TR) grammatical revision | 🟡 In Progress |
-| 9 | Content | All page texts revised for SCZ Metal | 🟡 In Progress |
-| 10 | Contact | Phone, email, address updated to SCZ Metal info | ✅ Done |
-| 11 | Contact | Social media links updated to SCZ Metal accounts | ✅ Done |
+| 9 | Content | All page texts revised for MyZiron | 🟡 In Progress |
+| 10 | Contact | Phone, email, address updated to MyZiron info | ✅ Done |
+| 11 | Contact | Social media links updated to MyZiron accounts | ✅ Done |
 | 12 | Bug Fix | Google Maps embed fixed on Contact page | ✅ Done |
 | 13 | SEO | Meta titles, descriptions, keywords updated | ✅ Done |
 | 14 | SEO | Open Graph tags updated | ✅ Done |
@@ -477,8 +477,8 @@ All changes applied by Hakan across all language versions unless stated otherwis
 | Field | Details |
 | --- | --- |
 | **Prepared by** | Hakan |
-| **Client** | SCZ Metal MMC |
-| **Website** | scz.az |
+| **Client** | MyZiron MMC |
+| **Website** | myziron.com |
 | **Document Version** | v1.0 — Draft |
 | **Report Date** | April 16, 2026 |
 | **Target Delivery** | April 23, 2026 |
@@ -488,7 +488,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 | | Signature | Date |
 | --- | --- | --- |
 | **Developer (Hakan)** | ___________________________ | ___________ |
-| **Client (SCZ Metal MMC)** | ___________________________ | ___________ |
+| **Client (MyZiron MMC)** | ___________________________ | ___________ |
 
 ---
 
