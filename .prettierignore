@@ -7,23 +7,6 @@ assets/css/
 
 *.md
 
-# Auto-generated detail pages
-# AZ/numune-mehsullar/
-# AZ/layiheler/
-# AZ/bloglar/
-# EN/sample-products/
-# EN/projects/
-# EN/blogs/
-# tr/ornek-urunler/
-# tr/projeler/
-# tr/bloglar/
-# RU/obrazcy-produkcii/
-# RU/proekty/
-# RU/blog/
-# en/
-# tr/
-# En/
-
 # Static media / upload folders
 Contents/
 image/
