@@ -95,7 +95,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 | Azerbaijani | AZ | `/az/` | ✅ Complete | Primary language |
 | English | EN | `/EN/` `/en/` `/En/` | 🟡 Under Revision | 3 case variants exist — duplicate issue (see §10) |
 | Turkish | TR | `/TR/` `/tr/` | 🟡 Under Revision | 2 case variants exist — duplicate issue (see §10) |
-| Russian | RU | `/RU/` | ✅ Added | New — not present in reference site |
+| Russian | RU | `/ru/` | ✅ Added | New — not present in reference site |
 
 **Total language variants per core page: 4**
 **Total language variants across all pages: 88**
@@ -123,7 +123,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 | AZ | `myziron.com/az/` |
 | EN | `myziron.com/EN/` |
 | TR | `myziron.com/TR/` |
-| RU | `myziron.com/RU/` |
+| RU | `myziron.com/ru/` |
 
 ---
 
@@ -142,7 +142,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 | AZ | `myziron.com/az/haqqimizda/myziron-mmc-taniyin/` |
 | EN | `myziron.com/EN/about-us/get-to-know/` |
 | TR | `myziron.com/TR/hakkimizda/myziron-mmc-taniyin/` |
-| RU | `myziron.com/RU/o-nas/uznayte-myziron-mmc/` |
+| RU | `myziron.com/ru/o-nas/uznayte-myziron-mmc/` |
 
 ---
 
@@ -302,7 +302,7 @@ myziron.com/ (public_html)
 │           ├── giyotin-makas/
 │           └── perfore/
 │
-└── RU/                           ← Russian language root (new — added by Hakan)
+└── ru/                           ← Russian language root (new — added by Hakan)
     ├── index.html
     ├── blog/
     ├── kontakty/
