@@ -92,7 +92,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 
 | Language | Code | Folder | Status | Notes |
 | --- | --- | --- | --- | --- |
-| Azerbaijani | AZ | `/AZ/` | ✅ Complete | Primary language |
+| Azerbaijani | AZ | `/az/` | ✅ Complete | Primary language |
 | English | EN | `/EN/` `/en/` `/En/` | 🟡 Under Revision | 3 case variants exist — duplicate issue (see §10) |
 | Turkish | TR | `/TR/` `/tr/` | 🟡 Under Revision | 2 case variants exist — duplicate issue (see §10) |
 | Russian | RU | `/RU/` | ✅ Added | New — not present in reference site |
@@ -120,7 +120,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 
 | Language | URL |
 | --- | --- |
-| AZ | `myziron.com/AZ/` |
+| AZ | `myziron.com/az/` |
 | EN | `myziron.com/EN/` |
 | TR | `myziron.com/TR/` |
 | RU | `myziron.com/RU/` |
@@ -139,7 +139,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 
 | Language | URL |
 | --- | --- |
-| AZ | `myziron.com/AZ/haqqimizda/myziron-mmc-taniyin/` |
+| AZ | `myziron.com/az/haqqimizda/myziron-mmc-taniyin/` |
 | EN | `myziron.com/EN/about-us/get-to-know/` |
 | TR | `myziron.com/TR/hakkimizda/myziron-mmc-taniyin/` |
 | RU | `myziron.com/RU/o-nas/uznayte-myziron-mmc/` |
@@ -221,7 +221,7 @@ myziron.com/ (public_html)
 │   └── trash/                    ← ⚠️ Unused/leftover images (cleanup needed)
 ├── img/                          ← ⚠️ Secondary image folder (consolidation needed)
 │
-├── AZ/                           ← Azerbaijani language root
+├── az/                           ← Azerbaijani language root
 │   ├── index.html                ← AZ Homepage
 │   ├── bloglar/
 │   ├── elaqe/
