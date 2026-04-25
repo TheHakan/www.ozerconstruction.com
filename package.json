@@ -11,8 +11,8 @@
     "lint:fix": "eslint . --fix --cache --format stylish",
     "lint:full": "eslint . --cache --format compact --max-warnings=9999",
     "lint:file": "eslint --cache --format compact --max-warnings=9999",
-    "prettier:check": "prettier --check \"AZ/**/*.html\" \"EN/**/*.html\" \"TR/**/*.html\" \"RU/**/*.html\" index.html",
-    "prettier:fix": "prettier --write \"AZ/**/*.html\" \"EN/**/*.html\" \"TR/**/*.html\" \"RU/**/*.html\" index.html"
+    "prettier:check": "prettier --check \"az/**/*.html\" \"EN/**/*.html\" \"TR/**/*.html\" \"RU/**/*.html\" index.html",
+    "prettier:fix": "prettier --write \"az/**/*.html\" \"EN/**/*.html\" \"TR/**/*.html\" \"RU/**/*.html\" index.html"
   },
   "dependencies": {
     "nodemailer": "^6.9.0"
