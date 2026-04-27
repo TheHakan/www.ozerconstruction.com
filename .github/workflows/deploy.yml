@@ -16,17 +16,26 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          printf '%s\n' "${{ secrets.SSH_KEY }}" | sed 's/\r$//' > ~/.ssh/deploy_key
+          cat > ~/.ssh/deploy_key <<'EOF'
+          ${{ secrets.SSH_KEY }}
+          EOF
+          tr -d '\r' < ~/.ssh/deploy_key > ~/.ssh/deploy_key.fixed
+          mv ~/.ssh/deploy_key.fixed ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh -i ~/.ssh/deploy_key -o BatchMode=yes -o ConnectTimeout=15 -o StrictHostKeyChecking=no -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USER }}"@"${{ secrets.SSH_HOST }}" 'echo SSH connection OK'
+          ssh-keygen -y -f ~/.ssh/deploy_key > ~/.ssh/deploy_key.pub
+          ls -l ~/.ssh/deploy_key ~/.ssh/deploy_key.pub
+          ssh -i ~/.ssh/deploy_key -o PreferredAuthentications=publickey -o BatchMode=yes -o ConnectTimeout=15 -o StrictHostKeyChecking=no -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USER }}"@"${{ secrets.SSH_HOST }}" 'echo SSH connection OK'
 
       - name: Deploy via rsync over SSH
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          printf '%s\n' "${{ secrets.SSH_KEY }}" | sed 's/\r$//' > ~/.ssh/deploy_key
+          cat > ~/.ssh/deploy_key <<'EOF'
+          ${{ secrets.SSH_KEY }}
+          EOF
+          tr -d '\r' < ~/.ssh/deploy_key > ~/.ssh/deploy_key.fixed
+          mv ~/.ssh/deploy_key.fixed ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-
           rsync -az --delete \
             --exclude='.git/' \
             --exclude='.github/' \
