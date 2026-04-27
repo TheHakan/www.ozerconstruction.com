@@ -16,11 +16,16 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          cat > ~/.ssh/deploy_key <<'EOF'
-          ${{ secrets.SSH_KEY }}
-          EOF
-          tr -d '\r' < ~/.ssh/deploy_key > ~/.ssh/deploy_key.fixed
-          mv ~/.ssh/deploy_key.fixed ~/.ssh/deploy_key
+          python3 - <<'PY'
+            import os
+            from pathlib import Path
+            key = os.environ.get('SSH_KEY', '')
+            if '\\r' in key:
+                key = key.replace('\\r', '')
+            if '\\n' in key and '\n' not in key:
+                key = key.replace('\\n', '\n')
+            Path.home().joinpath('.ssh/deploy_key').write_text(key, newline='\n')
+          PY
           chmod 600 ~/.ssh/deploy_key
           ssh-keygen -y -f ~/.ssh/deploy_key > ~/.ssh/deploy_key.pub
           ls -l ~/.ssh/deploy_key ~/.ssh/deploy_key.pub
@@ -30,11 +35,16 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          cat > ~/.ssh/deploy_key <<'EOF'
-          ${{ secrets.SSH_KEY }}
-          EOF
-          tr -d '\r' < ~/.ssh/deploy_key > ~/.ssh/deploy_key.fixed
-          mv ~/.ssh/deploy_key.fixed ~/.ssh/deploy_key
+          python3 - <<'PY'
+            import os
+            from pathlib import Path
+            key = os.environ.get('SSH_KEY', '')
+            if '\\r' in key:
+                key = key.replace('\\r', '')
+            if '\\n' in key and '\n' not in key:
+                key = key.replace('\\n', '\n')
+            Path.home().joinpath('.ssh/deploy_key').write_text(key, newline='\n')
+          PY
           chmod 600 ~/.ssh/deploy_key
           rsync -az --delete \
             --exclude='.git/' \
