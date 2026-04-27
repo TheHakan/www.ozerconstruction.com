@@ -489,6 +489,11 @@
     var isUpdating = false;
     var scrollTimeout = null;
 
+    function getSelectedFilter() {
+      var activeButton = $('.masonry__secondary-filters_active .masonry__secondary-filter-button_active');
+      return activeButton.length ? $.trim(activeButton.attr('data-filter')) : '*';
+    }
+
     if (grid.length) {
       grid.css('visibility', 'hidden');
       var $grid = grid.isotope({
@@ -504,7 +509,12 @@
           return true;
         }
 
-        var categories = item.querySelector('[data-filters]').getAttribute('data-filters').split(', ');
+        var filterNode = item.querySelector('[data-filters]');
+        var filterValue = filterNode ? filterNode.getAttribute('data-filters') || '' : '';
+        var categories = filterValue.split(',').map(function (value) {
+          return $.trim(value);
+        });
+
         return categories.indexOf(currentFilter) >= 0;
       }
 
@@ -564,6 +574,7 @@
       }
 
       function initMasonryGrid() {
+        currentFilter = getSelectedFilter();
         $grid.isotope();
         updateGrid();
       }
@@ -578,7 +589,7 @@
         e.preventDefault();
         $('.masonry__secondary-filter-button_active').removeClass('masonry__secondary-filter-button_active');
         $(this).addClass('masonry__secondary-filter-button_active');
-        currentFilter = $(this).attr('data-filter');
+        currentFilter = $.trim($(this).attr('data-filter'));
         currentPage = 1;
         updateGrid();
       });
@@ -613,9 +624,12 @@
         $('.masonry__secondary-filters_active').removeClass('masonry__secondary-filters_active').css({
           position: 'absolute'
         }).fadeOut(300);
-        $(".masonry__secondary-filters[data-tab-group=".concat(this.getAttribute('data-tab-button'), "]")).addClass('masonry__secondary-filters_active').css({
+        var $nextFilters = $(".masonry__secondary-filters[data-tab-group=".concat(this.getAttribute('data-tab-button'), "]")).addClass('masonry__secondary-filters_active').css({
           position: 'relative'
         }).fadeIn(300);
+        currentFilter = getSelectedFilter();
+        currentPage = 1;
+        updateGrid();
       });
     }
   })();
