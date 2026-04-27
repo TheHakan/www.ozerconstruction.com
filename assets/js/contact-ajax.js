@@ -1,4 +1,4 @@
-/* SCZ Metal — universal contact form AJAX handler */
+/* MyzIron — universal contact form AJAX handler */
 (function () {
   var API = '/api/contact.php';
 
