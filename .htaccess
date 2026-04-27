@@ -21,6 +21,9 @@ Options +FollowSymLinks
     RewriteEngine On
     RewriteBase /
 
+    # ── Protect Git metadata from public access ──────────────────────────────
+    RewriteRule (^|/)\.git(/|$) - [F,L,NC]
+
     # ── 1. Redirect /TR/ → /tr/ (from vercel.json) ───────────────────────────
     RewriteRule ^TR/(.*)$ /tr/$1 [R=301,L]
 
