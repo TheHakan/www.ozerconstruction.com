@@ -1,4 +1,4 @@
-/*  MyZiron — universal contact form AJAX handler */
+/* SCZ Metal — universal contact form AJAX handler */
 (function () {
   var API = '/api/contact.php';
 
