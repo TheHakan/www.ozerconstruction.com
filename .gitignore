@@ -17,6 +17,9 @@ yarn.lock
 .env.local
 .env.*.local
 
+# add file names including '.env' in its file name
+.env.*
+
 # IDE
 # .vscode/
 .idea/
