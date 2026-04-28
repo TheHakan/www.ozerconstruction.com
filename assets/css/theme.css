@@ -2482,6 +2482,12 @@ footer-minimal
   color: #2E3092;
 }
 
+.bg-img {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
 .footer-minimal__social.icofont-behance,
 .footer-minimal__social.icofont-google-plus {
   font-size: 26px;
