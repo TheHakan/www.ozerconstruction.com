@@ -68,7 +68,49 @@
     <meta name="designer" content="www.donusum.com" />
     <meta name="coder" content="www.donusum.com" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <style>
+      .masonry__secondary-filters-wrapper {
+        overflow: visible !important;
+        width: 100% !important;
+      }
+      .masonry__secondary-filters {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        margin-bottom: 56px !important;
+        top: 0 !important;
+        left: 0 !important;
+      }
+      .masonry__secondary-filter-button {
+        display: inline-flex !important;
+        vertical-align: top !important;
+        margin-bottom: 16px !important;
+        white-space: nowrap !important;
+      }
+      .furniture-dropdown {
+        display: inline-flex !important;
+        align-items: center !important;
+        position: relative !important;
+        width: auto !important;
+        margin-bottom: 16px !important;
+      }
+      .furniture-dropdown .dropdown__menu {
+        left: 0 !important;
+        right: auto !important;
+        top: calc(100% + 10px) !important;
+        box-shadow: 0 0px 25px rgba(0, 0, 0, 0.12) !important;
+        border-radius: 0 !important;
+        z-index: 100000 !important;
+        min-width: 220px !important;
+        max-width: calc(100vw - 40px) !important;
+      }
+      .furniture-dropdown .dropdown__item {
+        margin-bottom: 8px !important;
+      }
+    </style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-154412838-1"
@@ -425,176 +467,8 @@
                   >
                     Categories
                   </button>
-                  <!-- <button
-                    class="masonry__primary-filter-button"
-                    data-tab-button="Application"
-                    type="button"
-                  >
-                    Application
-                  </button>
-                  <button
-                    class="masonry__primary-filter-button"
-                    data-tab-button="teknik"
-                    type="button"
-                  >
-                    Technique
-                  </button> -->
                 </div>
                 <div class="masonry__secondary-filters-wrapper">
-                  <div
-                    class="masonry__secondary-filters"
-                    data-tab-group="Application"
-                    style="display: none"
-                  >
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="*"
-                      type="button"
-                    >
-                      All
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Uzmanlik_1"
-                      type="button"
-                    >
-                      Cutting
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Uzmanlik_2"
-                      type="button"
-                    >
-                      Bending
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Uzmanlik_3"
-                      type="button"
-                    >
-                      Welding
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Uzmanlik_4"
-                      type="button"
-                    >
-                      Painting
-                    </button>
-                  </div>
-                  <div
-                    class="masonry__secondary-filters"
-                    data-tab-group="teknik"
-                    style="display: none"
-                  >
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="*"
-                      type="button"
-                    >
-                      All
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_1"
-                      type="button"
-                    >
-                      CNC Laser Cutting
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_2"
-                      type="button"
-                    >
-                      CNC Abkant Bending
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_3"
-                      type="button"
-                    >
-                      Mesh
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_4"
-                      type="button"
-                    >
-                      CNC Profile Bending
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_5"
-                      type="button"
-                    >
-                      CNC Pipe Bending
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_6"
-                      type="button"
-                    >
-                      CNC Router Cutting
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_7"
-                      type="button"
-                    >
-                      Perforation
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_8"
-                      type="button"
-                    >
-                      CNC Punch
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_9"
-                      type="button"
-                    >
-                      Welding
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_10"
-                      type="button"
-                    >
-                      Painting
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_11"
-                      type="button"
-                    >
-                      Guillotine Shearing
-                    </button>
-
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="Teknik_12"
-                      type="button"
-                    >
-                      CNC Roll Bending
-                    </button>
-                  </div>
                   <div
                     class="masonry__secondary-filters masonry__secondary-filters_active"
                     data-tab-group="Categories"
@@ -851,13 +725,7 @@
                     >
                       Racks
                     </button>
-                    <button
-                      class="masonry__secondary-filter-button"
-                      data-filter="XLady"
-                      type="button"
-                    >
-                      X-Lady
-                    </button>
+                    <!-- <button                      class="masonry__secondary-filter-button"                      data-filter="XLady"                      type="button"                    >                      X-Lady                    </button> -->
                     <button
                       class="masonry__secondary-filter-button"
                       data-filter="ZibilQutulari"
@@ -882,6 +750,78 @@
                       </button>
                       <div class="dropdown__menu furniture-dropdown__menu">
                         <div class="dropdown__column">
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Ateshgah Sigorta"
+                            >
+                              Ateshgah Sigorta
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Convertion Center"
+                            >
+                              Convertion Center
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Evim Residence"
+                            >
+                              Evim Residence
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Flame Towers"
+                            >
+                              Flame Towers
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Harmony Residence"
+                            >
+                              Harmony Residence
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Haydar Aliyev Airport"
+                            >
+                              Haydar Aliyev Airport
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Malakan Park"
+                            >
+                              Malakan Park
+                            </button>
+                          </div>
+                          <div class="dropdown__item">
+                            <button
+                              class="dropdown__link masonry__secondary-filter-button"
+                              type="button"
+                              data-filter="Nerimanov Is Merkezi"
+                            >
+                              Nerimanov Is Merkezi
+                            </button>
+                          </div>
                           <div class="dropdown__item">
                             <button
                               class="dropdown__link masonry__secondary-filter-button"
@@ -18964,171 +18904,6 @@
                 <div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-1.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-1.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 001</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-10.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-10.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 002</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-11.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-11.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 003</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-2.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-2.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 004</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-3.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-3.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 005</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-4.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-4.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 006</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-5.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-5.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 007</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-6.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-6.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 008</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-7.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-7.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 009</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-8.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-8.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 010</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
-                  <a class="masonry-item" data-filters="Korkuluk" href="#">
-                    <div class="masonry-item__image-wrapper">
-                      <img
-                        alt="korkuluk-9.webp"
-                        class="masonry-item__image"
-                        data-src="../../assets/img/projects/facade/korkuluk/korkuluk-9.webp"
-                      />
-                    </div>
-                    <span class="masonry-item__title">Korkuluk 011</span>
-                    <span class="masonry-item__category">Facade</span>
-                  </a>
-                </div>
-                <div
-                  class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
-                >
                   <a class="masonry-item" data-filters="Malakan Park" href="#">
                     <div class="masonry-item__image-wrapper">
                       <img
@@ -26693,10 +26468,14 @@
                   </a>
                 </div>
 
-                <div
+                <!-- <div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175143_8f2c2582-ceff-468f-8521-66db50f78e33"
@@ -26707,11 +26486,14 @@
                     <span class="masonry-item__title">X-Lady 001</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175144_724451e2-0064-4036-9639-8becec4893f2"
@@ -26722,11 +26504,14 @@
                     <span class="masonry-item__title">X-Lady 002</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175144_a7cd73dd-da09-47e5-9d24-a723280627ac"
@@ -26737,11 +26522,14 @@
                     <span class="masonry-item__title">X-Lady 003</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175144_b323f3d3-7d0c-4fbd-8916-cf7521e8c6ca"
@@ -26752,11 +26540,14 @@
                     <span class="masonry-item__title">X-Lady 004</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175145_1a0db967-4712-47d1-9fed-47c3cd869011"
@@ -26767,11 +26558,14 @@
                     <span class="masonry-item__title">X-Lady 005</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175145_3307132a-8488-4345-a522-067af67b62a0"
@@ -26782,11 +26576,14 @@
                     <span class="masonry-item__title">X-Lady 006</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175145_485ec020-6b9f-4a14-b118-48ec077a1098"
@@ -26797,11 +26594,14 @@
                     <span class="masonry-item__title">X-Lady 007</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175146_6a827b9f-6175-4fcf-b5d2-0443bdd44062"
@@ -26812,11 +26612,14 @@
                     <span class="masonry-item__title">X-Lady 008</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175146_ac17164c-96f5-4429-9150-e3cfbc8c2fad"
@@ -26827,11 +26630,14 @@
                     <span class="masonry-item__title">X-Lady 009</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175146_ca29de51-0d13-4a72-a2a2-0dc90ac42c2f"
@@ -26842,11 +26648,14 @@
                     <span class="masonry-item__title">X-Lady 010</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175147_4ae5f888-bafc-42db-a1e0-4c7f585a62db"
@@ -26857,11 +26666,14 @@
                     <span class="masonry-item__title">X-Lady 011</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175147_dfb24e3e-7376-4442-be90-ba2b8c6f79a5"
@@ -26872,11 +26684,14 @@
                     <span class="masonry-item__title">X-Lady 012</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175147_fc1fb6c5-9dca-491a-9f10-44ca0c3ec6eb"
@@ -26887,11 +26702,14 @@
                     <span class="masonry-item__title">X-Lady 013</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175148_453277eb-5b00-464b-9ac5-7b5bc298e0bd"
@@ -26902,11 +26720,14 @@
                     <span class="masonry-item__title">X-Lady 014</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175148_5d470cfb-48d1-4be2-bb1b-70786084eec9"
@@ -26917,11 +26738,14 @@
                     <span class="masonry-item__title">X-Lady 015</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175148_7347fc23-2203-4655-8296-7257f5aff84d"
@@ -26932,11 +26756,14 @@
                     <span class="masonry-item__title">X-Lady 016</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175149_0279b6ea-3d9a-4b11-a46c-3eae659e7d0a"
@@ -26947,11 +26774,14 @@
                     <span class="masonry-item__title">X-Lady 017</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175149_168ed6e3-9d72-44bb-a498-1a426686f7d5"
@@ -26962,11 +26792,14 @@
                     <span class="masonry-item__title">X-Lady 018</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175149_1b2e4658-ff23-4161-b63d-16db3d853d90"
@@ -26977,11 +26810,14 @@
                     <span class="masonry-item__title">X-Lady 019</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175150_17c16812-5d87-4b90-852c-1d8a7bd555db"
@@ -26992,11 +26828,14 @@
                     <span class="masonry-item__title">X-Lady 020</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175150_c0dbe899-2803-47c6-8647-f3edc553912c"
@@ -27007,11 +26846,14 @@
                     <span class="masonry-item__title">X-Lady 021</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175150_f0b427d2-8c40-4026-bb29-9928db991677"
@@ -27022,11 +26864,14 @@
                     <span class="masonry-item__title">X-Lady 022</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175151_ccf3b34e-7b07-4a51-976e-2834dfe43607"
@@ -27037,11 +26882,14 @@
                     <span class="masonry-item__title">X-Lady 023</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
-                <div
+                </div><div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
                 >
-                  <a class="masonry-item" data-filters="XLady" href="#">
+                  <a
+                    class="masonry-item"
+                    data-filters="XLady"
+                    href="#"
+                  >
                     <div class="masonry-item__image-wrapper">
                       <img
                         alt="20221119_175151_e2f5bca5-0b79-4761-81a7-a5e843575c6f"
@@ -27052,7 +26900,7 @@
                     <span class="masonry-item__title">X-Lady 024</span>
                     <span class="masonry-item__category">X-Lady</span>
                   </a>
-                </div>
+                </div> -->
 
                 <div
                   class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"
@@ -27869,7 +27717,7 @@
                       <img
                         alt="CNC Fiber Laser Cutting | Precision and Speed in Metal Manufacturing Technology"
                         class="posts__image"
-                        src="/assets/img/Contents/Files/BlogResim/1721_cnc_fiber_lazer_kesim.webp"
+                        src="../../assets/img/Contents/Files/BlogResim/1721_cnc_fiber_lazer_kesim.webp"
                       />
                       <span class="posts__item-content">
                         <span class="posts__item-footer">
@@ -27891,7 +27739,7 @@
                       <img
                         alt="Bending"
                         class="posts__image"
-                        src="/assets/img/Contents/Files/BlogResim/20230608-azerbaycan-fuar.jpg"
+                        src="../../assets/img/Contents/Files/BlogResim/20230608-azerbaycan-fuar.jpg"
                       />
                       <span class="posts__item-content">
                         <span class="posts__item-footer">
