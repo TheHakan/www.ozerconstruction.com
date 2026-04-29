@@ -586,6 +586,10 @@
       }
 
       filterBtn.on('click', function (e) {
+        if ($(this).hasClass('furniture-dropdown-toggle')) {
+          return;
+        }
+
         e.preventDefault();
         $('.masonry__secondary-filter-button_active').removeClass('masonry__secondary-filter-button_active');
         $(this).addClass('masonry__secondary-filter-button_active');
