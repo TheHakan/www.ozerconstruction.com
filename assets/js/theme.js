@@ -504,6 +504,42 @@
 
       grid.find('.masonry__item').detach();
 
+      var filterFallbacks = {
+        'Base Shelf': 'Mebel',
+        'Set': 'Mebel',
+        'Exterior': 'Mebel',
+        'Interior Decoration': 'Mebel',
+        'Journal Tables': 'Mebel',
+        'Tables': 'Mebel',
+        'Seats': 'Mebel',
+        'Shelf': 'Mebel',
+        'Hanging Shelf': 'Mebel',
+        'Technical and Fire Doors': 'QapiDarvaza',
+        'Entrance Doors': 'QapiDarvaza',
+        'Gates': 'QapiDarvaza',
+        'Partition Doors': 'QapiDarvaza',
+        'Auto Door': 'QapiDarvaza',
+        'Panjur': 'QapiDarvaza',
+        'Rich Hotel': 'QapiDarvaza',
+        'Samaxi Rixos Hotel': 'QapiDarvaza',
+        'Skylight': 'QapiDarvaza',
+        'Socar Tower': 'QapiDarvaza',
+        'Tekfen': 'QapiDarvaza',
+        'Umraniye Santiye': 'QapiDarvaza',
+        'Volvo': 'QapiDarvaza',
+        'Winter Garden': 'KisBahcesi'
+      };
+
+      function getEffectiveFilters(filter) {
+        var effectiveFilters = [filter];
+
+        if (filterFallbacks[filter]) {
+          effectiveFilters.push(filterFallbacks[filter]);
+        }
+
+        return effectiveFilters;
+      }
+
       function itemMatchesFilter(item) {
         if (currentFilter === '*' || currentFilter === 'All' || currentFilter === 'all') {
           return true;
@@ -514,8 +550,11 @@
         var categories = filterValue.split(',').map(function (value) {
           return $.trim(value);
         });
+        var effectiveFilters = getEffectiveFilters(currentFilter);
 
-        return categories.indexOf(currentFilter) >= 0;
+        return effectiveFilters.some(function (filter) {
+          return categories.indexOf(filter) >= 0;
+        });
       }
 
       function loadItemImage(item) {
