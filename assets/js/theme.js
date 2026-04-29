@@ -635,6 +635,12 @@
         currentFilter = $.trim($(this).attr('data-filter'));
         currentPage = 1;
         updateGrid();
+
+        if ($(this).hasClass('dropdown__link')) {
+          var $dropdown = $(this).closest('.furniture-dropdown');
+          $dropdown.removeClass('dropdown_open show');
+          $dropdown.find('.furniture-dropdown-toggle').attr('aria-expanded', 'false');
+        }
       });
 
       showMoreBtn.on('click', function (e) {
