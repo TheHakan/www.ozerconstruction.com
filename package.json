@@ -1,5 +1,5 @@
 {
-  "name": "myziron-com",
+  "name": "ozerconstruction-com",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -13,7 +13,7 @@
     "lint:file": "eslint --cache --format compact --max-warnings=9999",
     "prettier:check": "prettier --check \"az/**/*.html\" \"en/**/*.html\" \"tr/**/*.html\" \"ru/**/*.html\" index.html",
     "prettier:fix": "prettier --write \"az/**/*.html\" \"en/**/*.html\" \"tr/**/*.html\" \"ru/**/*.html\" index.html",
-    "compress": "rm -f myziron-com.zip && zip -rq myziron-com.zip api assets az en ru tr .htaccess index.html $(test -f myziron-katalog.pdf && echo myziron-katalog.pdf || true)"
+    "compress": "rm -f ozerconstruction-com.zip && zip -rq ozerconstruction-com.zip api assets az en ru tr .htaccess index.html $(test -f ozerconstruction-katalog.pdf && echo ozerconstruction-katalog.pdf || true)"
   },
   "dependencies": {
     "nodemailer": "^6.9.0"
