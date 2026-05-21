@@ -53,7 +53,7 @@ Total Pages: **22 core pages** (excluding individual product/sample pages) × 4 
 
 | Page | Slug | Languages |
 | --- | --- | --- |
-| Myz Ironu Tanıyın | `myzironu-taniyin` | AZ, EN, TR, RU |
+| Özer İnşaatı Tanıyın | `ozer-insaati-taniyin` | AZ, EN, TR, RU |
 | Keyfiyyət Siyasətimiz | `keyfiyyat-siyasetimiz` | AZ, EN, TR, RU |
 | Missiya və Vizyonumuz | `missiya-ve-vizyonumuz` | AZ, EN, TR, RU |
 
@@ -113,9 +113,9 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **Logo replaced** | Removed Solmaz Aluminyum logo, inserted Myz Iron MMC official logo | ✅ Done |
-| 2 | **Brand name replacement** | All instances of "Solmaz Aluminyum" replaced with "Myz Iron" across all pages and all languages | ✅ Done |
-| 3 | **Brand images replaced** | Company-specific images and banners updated from Solmaz assets to Myz Iron assets | ✅ Done |
+| 1 | **Logo replaced** | Removed Solmaz Aluminyum logo, inserted Özer İnşaat official logo | ✅ Done |
+| 2 | **Brand name replacement** | All instances of "Solmaz Aluminyum" replaced with "Özer İnşaat" across all pages and all languages | ✅ Done |
+| 3 | **Brand images replaced** | Company-specific images and banners updated from Solmaz assets to Özer İnşaat assets | ✅ Done |
 
 ---
 
@@ -143,9 +143,9 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **Contact details updated** | Phone, email, and address replaced with Myz Iron MMC official contact information | ✅ Done |
-| 2 | **Physical address updated** | Company address updated to Myz Iron MMC location | ✅ Done |
-| 3 | **Social media links updated** | All social links replaced with Myz Iron MMC official social media accounts | ✅ Done |
+| 1 | **Contact details updated** | Phone, email, and address replaced with Özer İnşaat official contact information | ✅ Done |
+| 2 | **Physical address updated** | Company address updated to Özer İnşaat location | ✅ Done |
+| 3 | **Social media links updated** | All social links replaced with Özer İnşaat official social media accounts | ✅ Done |
 | 4 | **Google Maps fixed** | Google Maps embed on Contact page was not rendering correctly — fixed and now fully functional | ✅ Done |
 
 ---
@@ -154,10 +154,10 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **Meta titles updated** | All page `<title>` tags updated for Myz Iron MMC | ✅ Done |
-| 2 | **Meta descriptions updated** | All `<meta name="description">` values rewritten for Myz Iron | ✅ Done |
+| 1 | **Meta titles updated** | All page `<title>` tags updated for Özer İnşaat MMC | ✅ Done |
+| 2 | **Meta descriptions updated** | All `<meta name="description">` values rewritten for Özer İnşaat | ✅ Done |
 | 3 | **Meta keywords updated** | Keywords revised to reflect metal manufacturing, CNC, welding services | ✅ Done |
-| 4 | **OG tags updated** | Open Graph tags updated with Myz Iron branding | ✅ Done |
+| 4 | **OG tags updated** | Open Graph tags updated with Özer İnşaat branding | ✅ Done |
 
 ---
 
@@ -165,7 +165,7 @@ All changes listed below were applied across all applicable language versions of
 
 | # | Change | Details | Status |
 | --- | --- | --- | --- |
-| 1 | **HD image replacement** | All placeholder/reference site images to be replaced with high-quality images sourced for Myz Iron | 🔴 Pending |
+| 1 | **HD image replacement** | All placeholder/reference site images to be replaced with high-quality images sourced for Özer İnşaat | 🔴 Pending |
 | 2 | **Per-page image audit** | Each page's images to be individually reviewed and replaced | 🔴 Pending |
 
 > **Note:** A detailed per-page image inventory table will be added here upon completion of image replacement task before final delivery on April 23, 2026.
