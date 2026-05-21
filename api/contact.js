@@ -10,7 +10,7 @@ function escapeHtml(str) {
 }
 
 module.exports = async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://myziron.com");
+  res.setHeader("Access-Control-Allow-Origin", "https://ozerconstruction.com");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
@@ -41,7 +41,7 @@ module.exports = async function handler(req, res) {
   }
 
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST || "mail.myziron.com",
+    host: process.env.SMTP_HOST || "mail.ozerconstruction.com",
     port: parseInt(process.env.SMTP_PORT || "587", 10),
     secure: process.env.SMTP_SECURE === "true",
     auth: {
@@ -65,8 +65,8 @@ module.exports = async function handler(req, res) {
     .join("");
 
   const mailOptions = {
-    from: `"MyZiron Web" <${process.env.SMTP_USER}>`,
-    to: "info@myziron.com",
+    from: `"Özer Construction" <${process.env.SMTP_USER}>`,
+    to: "info@ozerconstruction.com",
     replyTo: email,
     subject: `Web Saytı - Əlaqə Forması: ${name}`,
     html: `
