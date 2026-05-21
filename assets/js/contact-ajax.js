@@ -1,4 +1,4 @@
-/* MyzIron — universal contact form AJAX handler */
+/* ozerconstruction — universal contact form AJAX handler */
 (function () {
   var API = '/api/contact.php';
 
