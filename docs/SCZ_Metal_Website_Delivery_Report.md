@@ -1,9 +1,9 @@
 # Website Delivery & Content Inventory Report
 
-**Project:** Myz Iron MMC — Corporate Website
-**Domain:** myziron.com
+**Project:** Özer İnşaat MMC — Corporate Website
+**Domain:** ozerconstruction.com
 **Prepared by:** Hakan
-**Client:** Myz Iron MMC
+**Client:** Özer İnşaat MMC
 **Report Date:** April 16, 2026
 **Planned Delivery Date:** April 23, 2026
 **Project Status:** 🟡 In Progress
@@ -12,9 +12,9 @@
 
 ## 1. Project Overview
 
-This document serves as the official **Website Content Inventory, Change Log, and Handover Report** for the Myz Iron MMC corporate website hosted at `myziron.com`. The site represents a full-service metal manufacturing and industrial services company offering CNC machining, laser cutting, bending, welding, and coating services.
+This document serves as the official **Website Content Inventory, Change Log, and Handover Report** for the Özer İnşaat MMC corporate website hosted at `ozerconstruction.com`. The site represents a full-service metal manufacturing and industrial services company offering CNC machining, laser cutting, bending, welding, and coating services.
 
-The website was developed by **Hakan** using a reference site (`solmazaluminyum.com`) provided by the client as a structural and design baseline. The original site was cloned and fully reworked — all branding, content, contact information, translations, SEO metadata, and media assets have been replaced or updated to reflect Myz Iron MMC's identity.
+The website was developed by **Hakan** using a reference site (`solmazaluminyum.com`) provided by the client as a structural and design baseline. The original site was cloned and fully reworked — all branding, content, contact information, translations, SEO metadata, and media assets have been replaced or updated to reflect Özer İnşaat MMC's identity.
 
 **Technology Stack:** Pure HTML, CSS, JavaScript
 **Development Method:** Cloned from reference site via `wget`, edited directly on source files
@@ -188,7 +188,7 @@ All changes listed below were applied across all applicable language versions of
 
 ## 6. Reference & Methodology Note
 
-> The design, layout, and structural foundation of `myziron.com` is based on the reference website `solmazaluminyum.com`, which was provided by the client as the desired design direction. The original site was cloned using `wget` and subsequently modified. All content, branding, contact information, translations, SEO data, and media assets specific to Solmaz Aluminyum have been fully replaced with Myz Iron MMC materials. The font, color scheme, and page layout were intentionally retained per client instruction.
+> The design, layout, and structural foundation of `www.ozerconstruction.com` is based on the reference website `solmazaluminyum.com`, which was provided by the client as the desired design direction. The original site was cloned using `wget` and subsequently modified. All content, branding, contact information, translations, SEO data, and media assets specific to Solmaz Aluminyum have been fully replaced with Özer İnşaat MMC materials. The font, color scheme, and page layout were intentionally retained per client instruction.
 
 ---
 
@@ -197,8 +197,8 @@ All changes listed below were applied across all applicable language versions of
 | | |
 | --- | --- |
 | **Prepared by** | Hakan |
-| **Client** | Myz Iron MMC |
-| **Website** | myziron.com |
+| **Client** | Özer İnşaat MMC |
+| **Website** | ozerconstruction.com |
 | **Report Date** | April 16, 2026 |
 | **Target Delivery** | April 23, 2026 |
 | **Client Signature** | ___________________________ |
