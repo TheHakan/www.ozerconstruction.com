@@ -1,10 +1,10 @@
-# Project Documentation: MyZiron MMC Corporate Website (myziron.com)
+# Project Documentation: MyZiron MMC Corporate Website (ozerconstruction.com)
 
 ## Website Technical Specification Document (WTS)
 
 **Document Type:** Website Technical Specification (WTS)
 **Project:** MyZiron MMC — Corporate Website
-**Domain:** myziron.com
+**Domain:** ozerconstruction.com
 **Prepared by:** Hakan
 **Client:** MyZiron MMC
 **Version:** v1.0 — Draft
@@ -36,8 +36,8 @@
 
 | Field | Details |
 | --- | --- |
-| **Client** | MyZiron MMC |
-| **Website** | myziron.com |
+| **Client** | Özer İnşaat MMC |
+| **Website** | ozerconstruction.com |
 | **Industry** | Metal Manufacturing & Industrial Services |
 | **Services** | CNC Laser/Router/Punch Cutting, Bending, Welding, Coating |
 | **Developer** | Hakan |
@@ -120,10 +120,10 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 
 | Language | URL |
 | --- | --- |
-| AZ | `myziron.com/az/` |
-| EN | `myziron.com/en/` |
-| TR | `myziron.com/TR/` |
-| RU | `myziron.com/ru/` |
+| AZ | `ozerconstruction.com/az/` |
+| EN | `ozerconstruction.com/en/` |
+| TR | `ozerconstruction.com/TR/` |
+| RU | `ozerconstruction.com/ru/` |
 
 ---
 
@@ -131,18 +131,18 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 
 | Page (AZ) | Slug (AZ) | Slug (EN) | Slug (TR) | Slug (RU) | Status |
 | --- | --- | --- | --- | --- | --- |
-| MyZiron MMC Tanıyın | `myziron-mmc-taniyin` | `get-to-know` | `myziron-mmc-taniyin` | `uznayte-myziron-mmc` | 🟡 |
+| Özer İnşaat MMC Tanıyın | `ozer-mmc-taniyin` | `get-to-know` | `ozer-mmc-taniyin` | `uznayte-ozer-mmc` | 🟡 |
 | Keyfiyyət Siyasətimiz | `keyfiyyat-siyasetimiz` | `quality-policy` | `kalite-politikamiz` | `politika-kachestva` | 🟡 |
 | Missiya və Vizyonumuz | `missiya-ve-vizyonumuz` | `our-mission-vision` | `misyon-ve-vizyonumuz` | `missiya-i-videniye` | 🟡 |
 
-**Full URLs (example — MyZiron MMC Tanıyın):**
+**Full URLs (example — Özer İnşaat MMC Tanıyın):**
 
 | Language | URL |
 | --- | --- |
-| AZ | `myziron.com/az/haqqimizda/myziron-mmc-taniyin/` |
-| EN | `myziron.com/en/about-us/get-to-know/` |
-| TR | `myziron.com/TR/hakkimizda/myziron-mmc-taniyin/` |
-| RU | `myziron.com/ru/o-nas/uznayte-myziron-mmc/` |
+| AZ | `ozerconstruction.com/az/haqqimizda/ozer-mmc-taniyin/` |
+| EN | `ozerconstruction.com/en/about-us/get-to-know/` |
+| TR | `ozerconstruction.com/TR/hakkimizda/ozer-mmc-taniyin/` |
+| RU | `ozerconstruction.com/ru/o-nas/uznayte-ozer-mmc/` |
 
 ---
 
@@ -195,7 +195,7 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 ## 6. Folder Structure
 
 ```text
-myziron.com/ (public_html)
+www.ozerconstruction.com/ (public_html)
 │
 ├── assets/
 │   ├── css/
@@ -477,8 +477,8 @@ All changes applied by Hakan across all language versions unless stated otherwis
 | Field | Details |
 | --- | --- |
 | **Prepared by** | Hakan |
-| **Client** | MyZiron MMC |
-| **Website** | myziron.com |
+| **Client** | Özer İnşaat MMC |
+| **Website** | <www.ozerconstruction.com> |
 | **Document Version** | v1.0 — Draft |
 | **Report Date** | April 16, 2026 |
 | **Target Delivery** | April 23, 2026 |
@@ -488,7 +488,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 | | Signature | Date |
 | --- | --- | --- |
 | **Developer (Hakan)** | ___________________________ | ___________ |
-| **Client (MyZiron MMC)** | ___________________________ | ___________ |
+| **Client (Özer İnşaat MMC)** | ___________________________ | ___________ |
 
 ---
 
