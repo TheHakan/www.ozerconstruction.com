@@ -65,7 +65,7 @@ module.exports = async function handler(req, res) {
     .join("");
 
   const mailOptions = {
-    from: `"Özer Construction" <${process.env.SMTP_USER}>`,
+    from: `"Özer İnşaat" <${process.env.SMTP_USER}>`,
     to: "info@ozerconstruction.com",
     replyTo: email,
     subject: `Web Saytı - Əlaqə Forması: ${name}`,

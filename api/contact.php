@@ -105,7 +105,7 @@ $subject = '=?UTF-8?B?' . base64_encode('Web Saytı - Əlaqə Forması: ' . $nam
 $headers = implode("\r\n", [
     'MIME-Version: 1.0',
     'Content-Type: text/html; charset=UTF-8',
-    'From: "Özer Construction" <' . SMTP_USER . '>',
+    'From: "Özer İnşaat" <' . SMTP_USER . '>',
     'Reply-To: ' . $email,
     'X-Mailer: PHP/' . phpversion(),
 ]);
@@ -178,7 +178,7 @@ function send_smtp(string $body, string $subject): bool {
 
     $msg = "MIME-Version: 1.0\r\n"
          . "Content-Type: text/html; charset=UTF-8\r\n"
-         . "From: \"Özer Construction\" <{$from}>\r\n"
+         . "From: \"Özer İnşaat\" <{$from}>\r\n"
          . "To: {$to}\r\n"
          . "Reply-To: " . addslashes(MAIL_TO) . "\r\n"
          . "Subject: {$subject}\r\n"
