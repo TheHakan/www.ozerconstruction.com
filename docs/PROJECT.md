@@ -1,16 +1,15 @@
-# Project Documentation: MyZiron MMC Corporate Website (ozerconstruction.com)
+# Project Documentation: Özer İnşaat MMC Corporate Website (ozerconstruction.com)
 
 ## Website Technical Specification Document (WTS)
 
 **Document Type:** Website Technical Specification (WTS)
-**Project:** MyZiron MMC — Corporate Website
+**Project:** Özer İnşaat MMC — Corporate Website
 **Domain:** ozerconstruction.com
 **Prepared by:** Hakan
-**Client:** MyZiron MMC
+**Client:** Özer İnşaat MMC
 **Version:** v1.0 — Draft
 **Created:** April 16, 2026
 **Target Delivery:** April 23, 2026
-**Status:** 🟡 In Progress
 
 ---
 
@@ -52,7 +51,7 @@
 
 ### About the Project
 
-MyZiron MMC required a corporate website to represent their metal manufacturing business. The client provided `solmazaluminyum.com` as a design and structural reference. The site was cloned using `wget` and fully reworked — all branding, content, contact details, translations, SEO metadata, and media assets have been replaced to reflect MyZiron MMC's identity.
+Özer İnşaat MMC required a corporate website to represent their metal manufacturing business. The client provided `solmazaluminyum.com` as a design and structural reference. The site was cloned using `wget` and fully reworked — all branding, content, contact details, translations, SEO metadata, and media assets have been replaced to reflect Özer İnşaat MMC's identity.
 
 ---
 
@@ -78,8 +77,8 @@ MyZiron MMC required a corporate website to represent their metal manufacturing 
 
 | Element | Value |
 | --- | --- |
-| **Company Name** | MyZiron MMC |
-| **Logo** | MyZiron Logo (replaced from Solmaz Aluminyum) |
+| **Company Name** | Özer İnşaat MMC |
+| **Logo** | Özer İnşaat Logo (replaced from Solmaz Aluminyum) |
 | **Primary Font** | Alumni Sans |
 | **Previous Font** | Teko (reference site font — replaced) |
 | **Brand Colors** | *(To be confirmed by client)* |
@@ -230,7 +229,7 @@ www.ozerconstruction.com/ (public_html)
 │   ├── haqqimizda/
 │   │   ├── keyfiyyat-siyasetimiz/
 │   │   ├── missiya-ve-vizyonumuz/
-│   │   └── myzironu-taniyin/
+│   │   └── ozer-insaati-taniyin/
 │   └── ixtisaslarimiz/
 │       ├── boya/
 │       ├── qaynaq/
@@ -285,7 +284,7 @@ www.ozerconstruction.com/ (public_html)
 │   ├── hakkimizda/
 │   │   ├── kalite-politikamiz/
 │   │   ├── misyon-ve-vizyonumuz/
-│   │   └── myzironu-taniyin/
+│   │   └── ozer-insaati-taniyin/
 │   └── uzmanliklarimiz/
 │       ├── boya/
 │       ├── kaynak/
@@ -311,7 +310,7 @@ www.ozerconstruction.com/ (public_html)
     ├── o-nas/
     │   ├── missiya-i-videniye/
     │   ├── politika-kachestva/
-    │   └── uznayte-myziron/
+    │   └── uznayte-ozer-insaat/
     └── uslugi/
         ├── pokrytiye/
         ├── svarka/
@@ -354,7 +353,7 @@ www.ozerconstruction.com/ (public_html)
 | Page | Language | Image Count | Images Replaced | HD Source | Status |
 | --- | --- | --- | --- | --- | --- |
 | Home (Hero Slider) | ALL | TBD | 🔴 Pending | TBD | 🔴 |
-| MyZironu Tanıyın | ALL | TBD | 🔴 Pending | TBD | 🔴 |
+| Özer İnşaatı Tanıyın | ALL | TBD | 🔴 Pending | TBD | 🔴 |
 | Keyfiyyət Siyasətimiz | ALL | TBD | 🔴 Pending | TBD | 🔴 |
 | Missiya və Vizyonumuz | ALL | TBD | 🔴 Pending | TBD | 🔴 |
 | Kəsim | ALL | TBD | 🔴 Pending | TBD | 🔴 |
@@ -389,7 +388,7 @@ www.ozerconstruction.com/ (public_html)
 | 5 | **Mobile Navigation** | Hamburger menu for mobile/tablet viewports | 🟡 To verify |
 | 6 | **Responsive Layout** | Mobile-first responsive design across all pages | 🟡 Final check pending |
 | 7 | **Image Gallery / Lightbox** | Project and sample product image galleries | 🟡 To verify |
-| 8 | **WhatsApp / Social Links** | Links to MyZiron official social accounts | ✅ Updated |
+| 8 | **WhatsApp / Social Links** | Links to Özer İnşaat official social accounts | ✅ Updated |
 | 9 | **Smooth Scroll / Animations** | CSS/JS scroll animations inherited from reference site | 🟡 To verify |
 | 10 | **Panorama Addon** | Revolution Slider panorama addon present in JS | 🟡 Check if used |
 
@@ -399,10 +398,10 @@ www.ozerconstruction.com/ (public_html)
 
 | Element | Status | Notes |
 | --- | --- | --- |
-| `<title>` tags | ✅ Updated | All pages updated for MyZiron |
-| `<meta name="description">` | ✅ Updated | Rewritten for MyZiron services |
+| `<title>` tags | ✅ Updated | All pages updated for Özer İnşaat |
+| `<meta name="description">` | ✅ Updated | Rewritten for Özer İnşaat services |
 | `<meta name="keywords">` | ✅ Updated | CNC, metal, welding, cutting keywords |
-| Open Graph (`og:title`, `og:description`, `og:image`) | ✅ Updated | MyZiron branding applied |
+| Open Graph (`og:title`, `og:description`, `og:image`) | ✅ Updated | Özer İnşaat branding applied |
 | `lang` attribute on `<html>` | 🟡 Verify | Should be `az`, `en`, `tr`, `ru` per page |
 | Canonical URLs | 🔴 Not confirmed | Check for duplicate content from en/en/En folders |
 | `robots.txt` | 🔴 Not confirmed | Verify exists and is correct |
@@ -421,7 +420,7 @@ www.ozerconstruction.com/ (public_html)
 | 4 | **`image/trash/` folder** | 🟡 Medium | Contains leftover unused images from reference site. Delete before deployment to keep server clean. |
 | 5 | **Duplicate `img/` and `assets/img/` folders** | 🟡 Medium | Two separate image folders exist. Audit and consolidate before deployment. |
 | 6 | **Blog post subfolders** (`/16/`, `/18/`) | 🟡 Low | Old blog post pages from reference site. Confirm if these are needed or should be removed. |
-| 7 | **Old project subfolders** (`/2/`, `/6/`, `/7/`...) | 🟡 Low | Old project pages from reference site. Confirm if these are MyZiron projects or leftover data. |
+| 7 | **Old project subfolders** (`/2/`, `/6/`, `/7/`...) | 🟡 Low | Old project pages from reference site. Confirm if these are Özer İnşaat projects or leftover data. |
 
 ---
 
@@ -431,7 +430,7 @@ All changes applied by Hakan across all language versions unless stated otherwis
 
 | # | Category | Change | Status |
 | --- | --- | --- | --- |
-| 1 | Branding | Logo replaced — Solmaz Aluminyum → MyZiron MMC | ✅ Done |
+| 1 | Branding | Logo replaced — Solmaz Aluminyum → Özer İnşaat MMC | ✅ Done |
 | 2 | Branding | All brand name text replaced site-wide | ✅ Done |
 | 3 | Branding | Brand images and banners replaced | ✅ Done |
 | 4 | Typography | Font changed from Teko → Alumni Sans | ✅ Done |
@@ -439,9 +438,9 @@ All changes applied by Hakan across all language versions unless stated otherwis
 | 6 | Translation | Russian (RU) version — added from scratch | ✅ Done |
 | 7 | Translation | English (EN) grammatical revision | 🟡 In Progress |
 | 8 | Translation | Turkish (TR) grammatical revision | 🟡 In Progress |
-| 9 | Content | All page texts revised for MyZiron | 🟡 In Progress |
-| 10 | Contact | Phone, email, address updated to MyZiron info | ✅ Done |
-| 11 | Contact | Social media links updated to MyZiron accounts | ✅ Done |
+| 9 | Content | All page texts revised for Özer İnşaat | 🟡 In Progress |
+| 10 | Contact | Phone, email, address updated to Özer İnşaat info | ✅ Done |
+| 11 | Contact | Social media links updated to Özer İnşaat accounts | ✅ Done |
 | 12 | Bug Fix | Google Maps embed fixed on Contact page | ✅ Done |
 | 13 | SEO | Meta titles, descriptions, keywords updated | ✅ Done |
 | 14 | SEO | Open Graph tags updated | ✅ Done |
